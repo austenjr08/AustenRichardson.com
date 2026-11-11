@@ -919,6 +919,8 @@
 
   function navigate(hit) {
     const page = hit.kind === 'star' ? 'about' : hit.kind === 'comet' ? 'comet' : hit.body.def.id;
+    // Tell the comet page this visit came from a real catch, so it counts toward the sighting number.
+    if (hit.kind === 'comet') { try { sessionStorage.setItem('cometCaught', '1'); } catch (e) {} }
     window.location.href = `pages/${page}.html`;
   }
 

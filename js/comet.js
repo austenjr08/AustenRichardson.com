@@ -4,8 +4,30 @@
   const dateEl = document.getElementById('cert-date');
   dateEl.textContent = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
-  const num = Date.now().toString(36).toUpperCase().slice(-6);
-  document.getElementById('cert-number').textContent = `No. ${num}`;
+  // Certificate number = how many times anyone has caught the comet, counted by a free public
+  // counter (GitHub Pages can't store data). Only a real click on the comet counts; refreshing
+  // keeps the same number. If the counter can't be reached, fall back to a random code.
+  const numEl = document.getElementById('cert-number');
+  const COUNTER = 'https://abacus.jasoncameron.dev/hit/austenrichardson-com/comet-sightings';
+  const fallback = () => { numEl.textContent = `No. ${Date.now().toString(36).toUpperCase().slice(-6)}`; };
+  const show = (n) => { numEl.textContent = `No. ${String(n).padStart(4, '0')}`; };
+  let caught = false, saved = null;
+  try {
+    caught = sessionStorage.getItem('cometCaught') === '1';
+    saved = sessionStorage.getItem('cometNumber');
+    sessionStorage.removeItem('cometCaught');
+  } catch (e) {}
+  if (caught) {
+    fetch(COUNTER, { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((d) => {
+        if (!Number.isFinite(d.value)) throw 0;
+        show(d.value);
+        try { sessionStorage.setItem('cometNumber', String(d.value)); } catch (e) {}
+      })
+      .catch(fallback);
+  } else if (saved) show(saved);
+  else fallback();
 
   const nameInput = document.getElementById('catcher');
   document.getElementById('save').addEventListener('click', () => {
