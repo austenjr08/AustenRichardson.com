@@ -36,7 +36,8 @@
   const GM = (TAU * TAU * MERCURY_A ** 3) / MERCURY_PERIOD ** 2;
   const STAR_R = 0.075;
   const MAX_APOAPSIS = 1.15; // fling cap: farthest point of any orbit (keeps it bound)
-  const COMET_INTERVAL = 60; // seconds of on-screen time between comets
+  const COMET_INTERVAL = 30; // seconds of on-screen time between comets
+  const FIRST_COMET = 10; // seconds until the first comet
   const BOOM_AT = 0.8; // seconds from swallow to explosion
   const RESPAWN_AFTER = 1.6; // seconds after explosion the eaten planet returns
   const RESET_DELAY = 10; // seconds after explosion the reset button appears
@@ -67,7 +68,7 @@
   let bodies = [];
   let mode = 'orbit'; // 'orbit' | 'collapse' | 'rogue'
   let sn = null; // supernova state
-  let comet = null, cometTimer = 0;
+  let comet = null, cometTimer = COMET_INTERVAL - FIRST_COMET;
   let particles = [];
   let press = null;
   let simTime = 0;
