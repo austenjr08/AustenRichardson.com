@@ -235,3 +235,16 @@ blockquote {
 @media (prefers-reduced-motion: reduce) {
   .planet { animation: none; }
 }
+
+/* Paper link (Neptune page) */
+.paper-title { font-size: 19px; color: rgba(233, 236, 255, 0.92); }
+.paper-link {
+  display: inline-block;
+  padding: 11px 22px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #02030a;
+  background: var(--accent);
+  border-radius: 999px;
+}
+.paper-link:hover { text-decoration: none; filter: brightness(1.1); }
