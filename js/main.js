@@ -209,6 +209,7 @@
   }
 
   function boom() {
+    if (window.siteStats) window.siteStats.send("supernova", sn.eaten.map((b) => b.def.id).join(", "));
     mode = 'rogue';
     sn.boomed = true;
     press = null;
