@@ -248,3 +248,8 @@ blockquote {
   border-radius: 999px;
 }
 .paper-link:hover { text-decoration: none; filter: brightness(1.1); }
+
+/* Site links in the top bar (Tutoring + Back to the system) */
+.topnav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 22px; }
+.topbar { gap: 16px; }
+.topbar .nav-tutoring:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }

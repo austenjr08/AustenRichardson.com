@@ -1,0 +1,134 @@
+/* Tutoring page. Builds on page.css (same fonts, colors and spacing). Mobile-first. */
+
+[hidden] { display: none !important; }
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 10;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #02030a;
+}
+.skip-link:focus { top: 12px; text-decoration: none; }
+
+.tutoring a:focus-visible,
+.tutoring button:focus-visible,
+.tutoring summary:focus-visible,
+.topbar a:focus-visible,
+.contact a:focus-visible,
+.skip-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.tutoring section { scroll-margin-top: 16px; }
+
+.t-hero { margin: 12px 0 8px; }
+.location { margin: 0 0 20px; color: var(--muted); font-size: 15px; }
+.t-cta { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  font: inherit;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: #02030a;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn:hover { text-decoration: none; filter: brightness(1.1); }
+.btn-ghost { color: var(--accent); background: transparent; }
+
+.muted { color: var(--muted); }
+
+.subjects li { font-size: 13px; }
+.highlights strong { font-weight: 600; }
+
+/* Pricing */
+.prices { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.price-card {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(6, 8, 22, 0.92);
+}
+.price-len { margin: 0; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
+.price-amt { margin: 4px 0 0; font-size: 32px; font-weight: 300; }
+.price-amt .per { font-size: 15px; color: var(--muted); }
+.price-note { margin-top: 14px; }
+
+/* Contact form */
+.t-form { display: grid; gap: 16px; margin-top: 8px; }
+.field { display: grid; gap: 6px; margin: 0; padding: 0; border: 0; min-width: 0; }
+.field-pair { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.field label, .field legend { font-size: 14px; color: var(--text); padding: 0; }
+.req-note { color: var(--muted); font-size: 13px; }
+#guardian-row.required .req-note { color: var(--accent); }
+
+.t-form input[type="text"],
+.t-form input[type="email"],
+.t-form select,
+.t-form textarea {
+  width: 100%;
+  padding: 11px 13px;
+  font: inherit;
+  font-size: 16px; /* 16px stops iOS from zooming in on focus */
+  color: var(--text);
+  background: rgba(6, 8, 22, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+}
+.t-form textarea { resize: vertical; }
+.t-form select option { color: #000; }
+.t-form input:focus-visible,
+.t-form select:focus-visible,
+.t-form textarea:focus-visible,
+.t-form input[type="radio"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-color: var(--accent);
+}
+.radios { display: flex; gap: 22px; }
+.radios label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.radios input { width: 18px; height: 18px; accent-color: var(--accent); }
+.t-form .btn { justify-self: start; }
+.form-status { margin: 0; min-height: 1.6em; color: var(--muted); }
+
+/* FAQ */
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 0; }
+.faq summary {
+  padding: 12px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.2em;
+  color: var(--accent);
+}
+.faq details[open] summary::before { content: "−"; }
+.faq details p { margin: 0 0 14px 1.2em; color: rgba(233, 236, 255, 0.85); }
+
+.tutoring + .contact { margin-top: 48px; }
+
+@media (min-width: 640px) {
+  .prices { grid-template-columns: 1fr 1fr; }
+  .field-pair { grid-template-columns: 1fr 1fr; }
+}
+
+/* Direct contact (Book a session) */
+.direct { margin: 0 0 18px; padding: 0; list-style: none; }
+.direct li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 8px 0; font-size: 18px; }
+.direct-label { min-width: 110px; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
+.direct a { overflow-wrap: anywhere; }

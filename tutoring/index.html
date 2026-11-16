@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math Tutoring — AustenRichardson.com</title>
+  <meta name="description" content="Math tutoring from Algebra through Calculus AB and SAT Math in the Melbourne, FL area, in person in public places or online.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%23ffb23f'/></svg>">
+  <link rel="stylesheet" href="../css/page.css">
+  <link rel="stylesheet" href="../css/tutoring.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="brand" href="../index.html">Austen Richardson</a>
+    <nav class="topnav" aria-label="Site">
+      <a class="nav-tutoring" href="./" aria-current="page">Tutoring</a>
+      <a href="../index.html">← Back to the system</a>
+    </nav>
+  </header>
+
+  <main id="main" class="tutoring">
+    <!-- 1. Header -->
+    <section class="t-hero" aria-labelledby="t-title">
+      <p class="eyebrow">Tutoring</p>
+      <h1 id="t-title">Math Tutoring</h1>
+      <p class="summary">Algebra through Calculus AB and SAT Math, taught by a local student who competes, builds, and teaches.</p>
+      <p class="location">Melbourne, FL area · In person in public places, or online</p>
+      <p class="t-cta"><a class="btn" href="#book">Book a session</a> <a class="btn btn-ghost" href="#contact">Ask a question</a></p>
+    </section>
+
+    <!-- 2. What I teach -->
+    <section aria-labelledby="teach">
+      <h2 id="teach">What I teach</h2>
+      <ul class="tags subjects">
+        <li>Algebra I</li>
+        <li>Algebra II</li>
+        <li>Geometry</li>
+        <li>Precalculus</li>
+        <li>Calculus AB</li>
+        <li>SAT/ACT Math</li>
+      </ul>
+    </section>
+
+    <!-- 3. Why work with me (facts only) -->
+    <section aria-labelledby="why">
+      <h2 id="why">Why work with me</h2>
+      <ul class="highlights">
+        <li><strong>Scores:</strong> AP Precalculus 5, AP Calculus BC 4, AP Statistics 4, SAT Math 720.</li>
+        <li><strong>Coursework:</strong> dual-enrollment Multivariable Calculus (A, Florida Tech); currently taking Differential Equations/Linear Algebra.</li>
+        <li>Led FTC Team #8617 Techno Tigers; Florida State Champion and World Championship qualifier.</li>
+        <li>Organized and led two STEM camps for students in 2nd–10th grade, including programming and building a robot.</li>
+      </ul>
+    </section>
+
+    <!-- 4. How sessions work -->
+    <section aria-labelledby="how">
+      <h2 id="how">How sessions work</h2>
+      <dl class="glance">
+        <div><dt>Length</dt><dd>30 or 60 minutes</dd></div>
+        <div><dt>Format</dt><dd>One-on-one</dd></div>
+        <div><dt>Practice</dt><dd>Problems tailored to the student’s class</dd></div>
+        <div><dt>Follow-up</dt><dd>Brief notes after each session</dd></div>
+        <div><dt>Where</dt><dd>Public places or online only</dd></div>
+      </dl>
+    </section>
+
+    <!-- 5. Pricing (values come from js/tutoring.js) -->
+    <section aria-labelledby="pricing">
+      <h2 id="pricing">Pricing</h2>
+      <div class="prices">
+        <div class="price-card">
+          <p class="price-len">30 minutes</p>
+          <p class="price-amt"><span data-price="30">$15</span><span class="per"> / session</span></p>
+        </div>
+        <div class="price-card">
+          <p class="price-len">60 minutes</p>
+          <p class="price-amt"><span data-price="60">$28</span><span class="per"> / session</span></p>
+        </div>
+      </div>
+      <p class="price-note"><strong data-discount>Half-price first session</strong>: <span data-price="first30">$7.50</span> for 30 minutes or <span data-price="first60">$14</span> for 60 minutes.</p>
+    </section>
+
+    <!-- 6. Booking: direct contact -->
+    <section id="book" aria-labelledby="book-h">
+      <h2 id="book-h">Book a session</h2>
+      <p>Call, text, or email me to set up a time. A parent or guardian should reach out for students under 18.</p>
+      <ul class="direct">
+        <li><span class="direct-label">Call or text</span> <a href="tel:+13212102720">(321) 210-2720</a></li>
+        <li><span class="direct-label">Email</span> <a href="mailto:austenjames08@gmail.com?subject=Math%20tutoring">austenjames08@gmail.com</a></li>
+      </ul>
+      <p class="t-cta"><a class="btn" href="sms:+13212102720">Text me</a> <a class="btn btn-ghost" href="mailto:austenjames08@gmail.com?subject=Math%20tutoring">Email me</a></p>
+    </section>
+
+    <!-- 7. Contact form (no data is stored by this site) -->
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p>Prefer to write it all out? Send a message here and I’ll reply by email.</p>
+      <!-- TODO: set FORM_ENDPOINT in js/tutoring.js. Until then, sending opens the visitor's email app. -->
+      <form id="contact-form" class="t-form" method="post" action="#" novalidate>
+        <div class="field">
+          <label for="f-name">Student name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80">
+        </div>
+        <div class="field">
+          <label for="f-email">Your email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="120">
+        </div>
+        <fieldset class="field">
+          <legend>Is the student under 18?</legend>
+          <div class="radios">
+            <label><input type="radio" name="under18" value="yes" required> Yes</label>
+            <label><input type="radio" name="under18" value="no"> No</label>
+          </div>
+        </fieldset>
+        <div class="field" id="guardian-row">
+          <label for="f-guardian">Parent/guardian email <span class="req-note">(required if the student is under 18)</span></label>
+          <input id="f-guardian" name="guardian" type="email" autocomplete="off" maxlength="120">
+        </div>
+        <div class="field-pair">
+          <div class="field">
+            <label for="f-grade">Grade</label>
+            <select id="f-grade" name="grade" required>
+              <option value="">Choose…</option>
+              <option>6th</option><option>7th</option><option>8th</option><option>9th</option>
+              <option>10th</option><option>11th</option><option>12th</option><option>College</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-course">Course</label>
+            <select id="f-course" name="course" required>
+              <option value="">Choose…</option>
+              <option>Algebra I</option><option>Algebra II</option><option>Geometry</option>
+              <option>Precalculus</option><option>Calculus AB</option><option>SAT/ACT Math</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="5" required maxlength="2000"></textarea>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- 8. Policies -->
+    <section aria-labelledby="policies">
+      <h2 id="policies">Policies</h2>
+      <ul class="highlights">
+        <li><strong>Cancellations:</strong> please cancel or reschedule at least 24 hours before the session.</li>
+        <li><strong>Payment:</strong> due at or before the session, by Venmo, Zelle, or a card payment link. Payment details are shared when you book.<span id="pay-extra"></span>
+          <!-- TODO: set VENMO_HANDLE and CARD_PAYMENT_URL in js/tutoring.js. -->
+          <a id="card-link" href="#" target="_blank" rel="noopener" hidden>Pay by card</a></li>
+        <li><strong>Parents and guardians:</strong> a parent or guardian must be involved for any student under 18.</li>
+        <li><strong>Safety:</strong> sessions are held in public places or online only, never alone in private homes.</li>
+      </ul>
+    </section>
+
+    <!-- 9. Testimonials -->
+    <section aria-labelledby="testimonials">
+      <h2 id="testimonials">Testimonials</h2>
+      <!-- TODO: add real testimonials here, only with written permission from the student/family.
+           Do not add invented reviews, quotes, or results. -->
+      <p class="muted">No testimonials yet.</p>
+    </section>
+
+    <!-- 10. FAQ -->
+    <section aria-labelledby="faq">
+      <h2 id="faq">FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>What grades and classes do you cover?</summary>
+          <p>Middle and high school math from Algebra I through Calculus AB, plus the math sections of the SAT and ACT. If you’re not sure whether your class fits, send a message and ask.</p>
+        </details>
+        <details>
+          <summary>In person or online?</summary>
+          <p>Either. In-person sessions are in public places in the Melbourne, FL area, like a library. Online sessions are held over a video call.</p>
+        </details>
+        <details>
+          <summary>How do I book?</summary>
+          <p>Call or text (321) 210-2720, email austenjames08@gmail.com, or use the contact form, and we’ll pick a time. For students under 18, a parent or guardian should reach out.</p>
+        </details>
+        <details>
+          <summary>What should the student bring?</summary>
+          <p>Current homework, notes, or a recent test, plus a pencil and calculator if the class uses one. For online sessions, a device with a camera and microphone.</p>
+        </details>
+        <details>
+          <summary>What if we need to cancel?</summary>
+          <p>Please cancel or reschedule at least 24 hours ahead so the time can go to someone else.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <nav class="contact" aria-label="Elsewhere">
+    <a href="https://www.linkedin.com/in/austen-richardson-918320334/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/austenjr08" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+  </nav>
+
+  <script src="../js/page.js"></script>
+  <script src="../js/tutoring.js"></script>
+</body>
+</html>
