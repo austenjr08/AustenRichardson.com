@@ -40,7 +40,7 @@
   const FIRST_COMET = 10; // seconds until the first comet
   const BOOM_AT = 0.8; // seconds from swallow to explosion
   const RESPAWN_AFTER = 1.6; // seconds after explosion the eaten planet returns
-  const RESET_DELAY = 10; // seconds after explosion the reset button appears
+  const RESET_DELAY = 0; // seconds after explosion the reset button appears (0 = right away)
   const CLICK_SLOP_PX = 6;
   const CLICK_MAX_MS = 600;
   const TRAIL_N = 170;
