@@ -13,8 +13,8 @@ const TUTORING = {
   // Email the contact form sends to (via the visitor's email app) until FORM_ENDPOINT is set.
   CONTACT_EMAIL: 'austenjames08@gmail.com',
 
-  // TODO: payment details. Leave a value as-is to hide it. Zelle is sent privately at booking
-  // (a Zelle handle is usually a phone number or email, so it is never shown on the page).
+  // TODO: optional payment details. Leave a value as-is to hide it.
+  // (Zelle is written directly in the Policies section of tutoring/index.html.)
   VENMO_HANDLE: '[VENMO_HANDLE]',
   CARD_PAYMENT_URL: '[CARD_PAYMENT_URL]',
 };
