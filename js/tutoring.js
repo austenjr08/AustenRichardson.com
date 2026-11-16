@@ -1,22 +1,16 @@
-// Tutoring page settings. EDIT HERE: prices, form endpoint, email for the form, payment.
+// Tutoring page settings. EDIT HERE: prices, form endpoint, email for the form.
 // (Phone and email shown in the "Book a session" section are written directly in tutoring/index.html.)
 // The page reads these values and fills them in, so there is only one place to change them.
 const TUTORING = {
   PRICE_30: 15, // dollars per 30-minute session
-  PRICE_60: 28, // dollars per 60-minute session. TODO: Austen to confirm this number.
-  FIRST_SESSION_DISCOUNT: 'Half-price first session',
+  PRICE_60: 28, // dollars per 60-minute session
 
-  // TODO: paste a form endpoint (e.g. https://formspree.io/f/xxxxxxx). Until then the form
-  // opens the visitor's email app instead, addressed to CONTACT_EMAIL.
-  FORM_ENDPOINT: '[FORM_ENDPOINT]',
+  // Formspree form that forwards contact-form messages to your email.
+  // (If this is ever emptied, the form falls back to opening the visitor's email app.)
+  FORM_ENDPOINT: 'https://formspree.io/f/xljbjpaj',
 
   // Email the contact form sends to (via the visitor's email app) until FORM_ENDPOINT is set.
   CONTACT_EMAIL: 'austenjames08@gmail.com',
-
-  // TODO: optional payment details. Leave a value as-is to hide it.
-  // (Zelle is written directly in the Policies section of tutoring/index.html.)
-  VENMO_HANDLE: '[VENMO_HANDLE]',
-  CARD_PAYMENT_URL: '[CARD_PAYMENT_URL]',
 };
 
 (() => {
@@ -28,18 +22,8 @@ const TUTORING = {
     const key = el.dataset.price;
     if (key === '30') el.textContent = money(TUTORING.PRICE_30);
     if (key === '60') el.textContent = money(TUTORING.PRICE_60);
-    if (key === 'first30') el.textContent = money(TUTORING.PRICE_30 / 2);
-    if (key === 'first60') el.textContent = money(TUTORING.PRICE_60 / 2);
   });
-  document.querySelectorAll('[data-discount]').forEach((el) => { el.textContent = TUTORING.FIRST_SESSION_DISCOUNT; });
 
-  // ---------- Payment ----------
-  const payExtra = document.getElementById('pay-extra');
-  const bits = [];
-  if (isSet(TUTORING.VENMO_HANDLE)) bits.push(`Venmo: ${TUTORING.VENMO_HANDLE}`);
-  if (bits.length) payExtra.textContent = ` ${bits.join(' · ')}.`;
-  const cardLink = document.getElementById('card-link');
-  if (isSet(TUTORING.CARD_PAYMENT_URL)) { cardLink.href = TUTORING.CARD_PAYMENT_URL; cardLink.hidden = false; }
 
   // ---------- Contact form ----------
   const form = document.getElementById('contact-form');

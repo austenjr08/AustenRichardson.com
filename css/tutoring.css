@@ -28,6 +28,7 @@
 .tutoring section { scroll-margin-top: 16px; }
 
 .t-hero { margin: 12px 0 8px; }
+.about-line { margin: 0 0 6px; font-size: 16px; color: rgba(233, 236, 255, 0.85); }
 .location { margin: 0 0 20px; color: var(--muted); font-size: 15px; }
 .t-cta { display: flex; flex-wrap: wrap; gap: 10px; }
 
@@ -63,7 +64,6 @@
 .price-len { margin: 0; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
 .price-amt { margin: 4px 0 0; font-size: 32px; font-weight: 300; }
 .price-amt .per { font-size: 15px; color: var(--muted); }
-.price-note { margin-top: 14px; }
 
 /* Contact form */
 .t-form { display: grid; gap: 16px; margin-top: 8px; }
@@ -132,3 +132,15 @@
 .direct li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 8px 0; font-size: 18px; }
 .direct-label { min-width: 110px; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); }
 .direct a { overflow-wrap: anywhere; }
+
+/* Spam trap field, hidden from people */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* "How sessions work" has 5 tiles: lay them out so no empty cell shows */
+.tutoring .glance { grid-template-columns: 1fr 1fr; }
+.tutoring .glance div:last-child { grid-column: 1 / -1; }
+@media (min-width: 640px) {
+  .tutoring .glance { grid-template-columns: repeat(6, 1fr); }
+  .tutoring .glance div { grid-column: span 2; }
+  .tutoring .glance div:nth-child(n + 4) { grid-column: span 3; }
+}

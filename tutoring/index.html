@@ -25,7 +25,8 @@
     <section class="t-hero" aria-labelledby="t-title">
       <p class="eyebrow">Tutoring</p>
       <h1 id="t-title">Math Tutoring</h1>
-      <p class="summary">Algebra through Calculus AB and SAT Math, taught by a local student who competes, builds, and teaches.</p>
+      <p class="summary">Algebra through Calculus AB and SAT/ACT Math, taught by a local student who competes, builds, and teaches.</p>
+      <p class="about-line">I’m Austen Richardson, an 18-year-old student at Holy Trinity Episcopal Academy.</p>
       <p class="location">Melbourne, FL area · In person in public places, or online</p>
       <p class="t-cta"><a class="btn" href="#book">Book a session</a> <a class="btn btn-ghost" href="#contact">Ask a question</a></p>
     </section>
@@ -39,6 +40,7 @@
         <li>Geometry</li>
         <li>Precalculus</li>
         <li>Calculus AB</li>
+        <li>Statistics</li>
         <li>SAT/ACT Math</li>
       </ul>
     </section>
@@ -47,8 +49,8 @@
     <section aria-labelledby="why">
       <h2 id="why">Why work with me</h2>
       <ul class="highlights">
-        <li><strong>Scores:</strong> AP Precalculus 5, AP Calculus BC 4, AP Statistics 4, SAT Math 720.</li>
-        <li><strong>Coursework:</strong> dual-enrollment Multivariable Calculus (A, Florida Tech); currently taking Differential Equations/Linear Algebra.</li>
+        <li><strong>Scores:</strong> AP Precalculus 5, AP Calculus BC 4, AP Statistics 4, SAT Math 740, ACT Math 33.</li>
+        <li><strong>Coursework:</strong> dual-enrollment Multivariable Calculus (A, Florida Tech); currently taking Differential Equations/Linear Algebra, also at Florida Tech.</li>
         <li>Led FTC Team #8617 Techno Tigers; Florida State Champion and World Championship qualifier.</li>
         <li>Organized and led two STEM camps for students in 2nd–10th grade, including programming and building a robot.</li>
       </ul>
@@ -61,8 +63,8 @@
         <div><dt>Length</dt><dd>30 or 60 minutes</dd></div>
         <div><dt>Format</dt><dd>One-on-one</dd></div>
         <div><dt>Practice</dt><dd>Problems tailored to the student’s class</dd></div>
-        <div><dt>Follow-up</dt><dd>Brief notes after each session</dd></div>
-        <div><dt>Where</dt><dd>Public places or online only</dd></div>
+        <div><dt>When</dt><dd>Weekday afternoons after 5 PM. Ask about specific times.</dd></div>
+        <div><dt>Where</dt><dd>Public places, or online over Zoom or Google Meet</dd></div>
       </dl>
     </section>
 
@@ -79,13 +81,12 @@
           <p class="price-amt"><span data-price="60">$28</span><span class="per"> / session</span></p>
         </div>
       </div>
-      <p class="price-note"><strong data-discount>Half-price first session</strong>: <span data-price="first30">$7.50</span> for 30 minutes or <span data-price="first60">$14</span> for 60 minutes.</p>
     </section>
 
     <!-- 6. Booking: direct contact -->
     <section id="book" aria-labelledby="book-h">
       <h2 id="book-h">Book a session</h2>
-      <p>Call, text, or email me to set up a time. A parent or guardian should reach out for students under 18.</p>
+      <p>Call, text, or email me to set up a time. I’m generally free weekday afternoons after 5 PM, so tell me what times work for you. I usually reply within 12 hours. A parent or guardian should reach out for students under 18.</p>
       <ul class="direct">
         <li><span class="direct-label">Call or text</span> <a href="tel:+13212102720">(321) 210-2720</a></li>
         <li><span class="direct-label">Email</span> <a href="mailto:austenjames08@gmail.com?subject=Math%20tutoring">austenjames08@gmail.com</a></li>
@@ -97,8 +98,11 @@
     <section id="contact" aria-labelledby="contact-h">
       <h2 id="contact-h">Contact</h2>
       <p>Prefer to write it all out? Send a message here and I’ll reply by email.</p>
-      <!-- TODO: set FORM_ENDPOINT in js/tutoring.js. Until then, sending opens the visitor's email app. -->
+      <!-- Messages go through Formspree (endpoint set in js/tutoring.js). This site stores nothing. -->
       <form id="contact-form" class="t-form" method="post" action="#" novalidate>
+        <input type="hidden" name="_subject" value="New tutoring inquiry from austenrichardson.com">
+        <!-- Spam trap: real visitors never see or fill this. -->
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
         <div class="field">
           <label for="f-name">Student name</label>
           <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80">
@@ -132,7 +136,7 @@
             <select id="f-course" name="course" required>
               <option value="">Choose…</option>
               <option>Algebra I</option><option>Algebra II</option><option>Geometry</option>
-              <option>Precalculus</option><option>Calculus AB</option><option>SAT/ACT Math</option><option>Other</option>
+              <option>Precalculus</option><option>Calculus AB</option><option>Statistics</option><option>SAT/ACT Math</option><option>Other</option>
             </select>
           </div>
         </div>
@@ -150,21 +154,14 @@
       <h2 id="policies">Policies</h2>
       <ul class="highlights">
         <li><strong>Cancellations:</strong> please cancel or reschedule at least 24 hours before the session.</li>
-        <li><strong>Payment:</strong> due at or before the session, by Zelle, Venmo, or a card payment link. Zelle: <strong>(321) 210-2720</strong> (Austen Richardson). Other payment details are shared when you book.<span id="pay-extra"></span>
-          <!-- TODO: set VENMO_HANDLE and CARD_PAYMENT_URL in js/tutoring.js. -->
-          <a id="card-link" href="#" target="_blank" rel="noopener" hidden>Pay by card</a></li>
-        <li><strong>Parents and guardians:</strong> a parent or guardian must be involved for any student under 18.</li>
-        <li><strong>Safety:</strong> sessions are held in public places or online only, never alone in private homes.</li>
+        <li><strong>Payment:</strong> due at or before the session, by Zelle or cash. Zelle: <strong>(321) 210-2720</strong> (Austen Richardson).</li>
+        <li><strong>Parents and guardians:</strong> a parent or guardian must be involved in communication for any student under 18, but they do not have to attend the lesson itself (however, parents are free to do so).</li>
+        <li><strong>Safety:</strong> sessions are held in public places or online only.</li>
       </ul>
     </section>
 
-    <!-- 9. Testimonials -->
-    <section aria-labelledby="testimonials">
-      <h2 id="testimonials">Testimonials</h2>
-      <!-- TODO: add real testimonials here, only with written permission from the student/family.
-           Do not add invented reviews, quotes, or results. -->
-      <p class="muted">No testimonials yet.</p>
-    </section>
+    <!-- Testimonials: removed until there are real ones. Add a section here only with
+         real reviews the student/family gave written permission to post. -->
 
     <!-- 10. FAQ -->
     <section aria-labelledby="faq">
@@ -172,15 +169,19 @@
       <div class="faq">
         <details>
           <summary>What grades and classes do you cover?</summary>
-          <p>Middle and high school math from Algebra I through Calculus AB, plus the math sections of the SAT and ACT. If you’re not sure whether your class fits, send a message and ask.</p>
+          <p>Middle and high school math from Algebra I through Calculus AB, plus Statistics and the math sections of the SAT and ACT. If you’re not sure whether your class fits, send a message and ask.</p>
         </details>
         <details>
           <summary>In person or online?</summary>
-          <p>Either. In-person sessions are in public places in the Melbourne, FL area, like a library. Online sessions are held over a video call.</p>
+          <p>Either. In-person sessions are in public places in the Melbourne, FL area, like a library. Online sessions are held over Zoom or Google Meet.</p>
         </details>
         <details>
           <summary>How do I book?</summary>
           <p>Call or text (321) 210-2720, email austenjames08@gmail.com, or use the contact form, and we’ll pick a time. For students under 18, a parent or guardian should reach out.</p>
+        </details>
+        <details>
+          <summary>When are you available?</summary>
+          <p>Weekday afternoons after 5 PM. Send me the days and times that work for you and I’ll confirm one. I usually reply within 12 hours.</p>
         </details>
         <details>
           <summary>What should the student bring?</summary>
