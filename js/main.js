@@ -41,6 +41,12 @@
   const BOOM_AT = 0.8; // seconds from swallow to explosion
   const RESPAWN_AFTER = 1.6; // seconds after explosion the eaten planet returns
   const RESET_DELAY = 0; // seconds after explosion the reset button appears (0 = right away)
+  // Black hole: sometimes the supernova leaves a black hole instead of a pulsar.
+  // Heavier collapses (more planets swallowed) are more likely to make one, like real stars.
+  const BH_CHANCE = 0.3; // chance with one planet swallowed; +25% for each extra planet
+  const BH_R = 0.05; // event horizon radius
+  const BH_GM = 0.02; // pull strength (much gentler than the star, so planets drift in slowly)
+  const BH_RESPAWN = 3; // seconds before a swallowed planet reappears
   const CLICK_SLOP_PX = 6;
   const CLICK_MAX_MS = 600;
   const TRAIL_N = 170;
@@ -209,7 +215,10 @@
   }
 
   function boom() {
-    if (window.siteStats) window.siteStats.send("supernova", sn.eaten.map((b) => b.def.id).join(", "));
+    // Add #blackhole to the address to always get one (handy for testing).
+    sn.bh = location.hash === '#blackhole' || Math.random() < BH_CHANCE + 0.25 * (sn.eaten.length - 1);
+    if (sn.bh) { sn.disk = makeDisk(); sn.bhFlash = 0; }
+    if (window.siteStats) window.siteStats.send('supernova', sn.eaten.map((b) => b.def.id).join(', ') + (sn.bh ? ' (black hole)' : ''));
     mode = 'rogue';
     sn.boomed = true;
     press = null;
@@ -234,7 +243,7 @@
     for (let tries = 0; tries < 80; tries++) {
       x = rand(-hw + r, hw - r);
       y = rand(-yBot + r, yTop - r);
-      let ok = true;
+      let ok = Math.hypot(x, y) > 0.35; // never reappear right next to the center
       for (const o of bodies) {
         if (o === b || o.eaten) continue;
         if (Math.hypot(o.x - x, o.y - y) < collR(o) + r + 0.03) { ok = false; break; }
@@ -244,7 +253,45 @@
     const a = rand(0, TAU);
     b.x = x; b.y = y;
     b.vx = Math.cos(a) * ROGUE_CRUISE; b.vy = Math.sin(a) * ROGUE_CRUISE;
-    b.eaten = false; b.spawnT = 0; b.scale = 0; b.trail = []; b.trailClock = 0;
+    b.eaten = false; b.fall = null; b.spawnT = 0; b.scale = 0; b.trail = []; b.trailClock = 0;
+  }
+
+  // ---------- Black hole ----------
+  const bhGrow = () => 1 - Math.exp(-(sn.t - BOOM_AT) / 1.2); // 0 → 1 as it forms
+
+  function makeDisk() {
+    const parts = [];
+    for (let i = 0; i < 260; i++) {
+      const r = BH_R * (1.5 + Math.pow(Math.random(), 1.3) * 2.6);
+      parts.push({ r, a: rand(0, TAU), s: rand(0.6, 1.8) });
+    }
+    return parts;
+  }
+
+  // A planet crossed the point of no return: it spirals in, stretches and vanishes.
+  function fallIn(b) {
+    if (press && press.hit.body === b) press = null;
+    b.held = false;
+    b.eaten = true;
+    b.trail = [];
+    b.fall = { t: 0, r0: Math.hypot(b.x, b.y), a0: Math.atan2(b.y, b.x) };
+    sn.bhFlash = 1;
+  }
+
+  function fallPos(b) {
+    const p = Math.min(1, b.fall.t / 0.9);
+    const r = b.fall.r0 * (1 - p) ** 1.4;
+    const a = b.fall.a0 + 5 * p * p;
+    return { p, x: Math.cos(a) * r, y: Math.sin(a) * r, a };
+  }
+
+  // Pull toward the black hole. Returns true if the object crossed the horizon.
+  function bhPull(o, dt, k) {
+    const r2 = o.x * o.x + o.y * o.y, r = Math.sqrt(r2);
+    if (r < BH_R * 1.6) return true;
+    const f = (BH_GM * k * bhGrow()) / (r2 * r);
+    o.vx -= f * o.x * dt; o.vy -= f * o.y * dt;
+    return false;
   }
 
   function resetSystem() {
@@ -319,7 +366,10 @@
     if (!c) return;
     c.age += dt;
     if (!c.free) gravityStep(c, dt, 0);
-    else { c.x += c.vx * dt; c.y += c.vy * dt; }
+    else {
+      if (sn && sn.bh && bhPull(c, dt, 1)) { comet = null; sn.bhFlash = 1; return; }
+      c.x += c.vx * dt; c.y += c.vy * dt;
+    }
     pushTrail(c, dt, 0.05, 40);
     const r = Math.hypot(c.x, c.y);
     if (c.age > 3 && r > Math.hypot(hw, hh) + 0.3 && c.x * c.vx + c.y * c.vy > 0) comet = null;
@@ -358,6 +408,7 @@
 
   function updateRogue(dt) {
     const list = bodies.filter((b) => !b.eaten);
+    const bh = sn && sn.bh;
     for (const b of list) {
       if (b.spawnT >= 0) {
         b.spawnT += dt;
@@ -366,6 +417,7 @@
         if (p >= 1) { b.spawnT = -1; b.scale = 1; }
       }
       if (b.held) { pushTrail(b, dt, 0.03, ROGUE_TRAIL_N); continue; }
+      if (bh && bhPull(b, dt, 1)) { fallIn(b); continue; }
       // Random wander: gently turn heading, keep speed in a lively range.
       const turn = (Math.random() - 0.5) * 1.4 * dt;
       const c = Math.cos(turn), s = Math.sin(turn);
@@ -384,15 +436,18 @@
       if (b.y > yTop - r) { b.y = yTop - r; b.vy = -Math.abs(b.vy); }
       pushTrail(b, dt, 0.03, ROGUE_TRAIL_N);
     }
-    for (let i = 0; i < list.length; i++)
-      for (let j = i + 1; j < list.length; j++) collide(list[i], list[j]);
+    const live = list.filter((b) => !b.eaten);
+    for (let i = 0; i < live.length; i++)
+      for (let j = i + 1; j < live.length; j++) collide(live[i], live[j]);
   }
 
   function updateParticles(dt) {
     if (!particles.length) return;
     const drag = Math.exp(-0.7 * dt);
+    const bh = sn && sn.bh;
     for (const p of particles) {
       p.age += dt;
+      if (bh && bhPull(p, dt, 4)) p.age = p.life;
       p.vx *= drag; p.vy *= drag;
       p.x += p.vx * dt; p.y += p.vy * dt;
     }
@@ -412,7 +467,11 @@
       if (!sn.boomed && sn.t >= BOOM_AT) boom();
       if (sn.boomed) {
         const tb = sn.t - BOOM_AT;
-        for (const b of sn.eaten) if (b.eaten && tb >= RESPAWN_AFTER) respawn(b);
+        for (const b of sn.eaten) if (b.eaten && !b.fall && tb >= RESPAWN_AFTER) respawn(b);
+        if (sn.bh) {
+          sn.bhFlash = Math.max(0, sn.bhFlash - dt * 1.5);
+          for (const b of bodies) if (b.fall && (b.fall.t += dt) >= BH_RESPAWN) respawn(b);
+        }
         if (tb >= RESET_DELAY && !sn.resetShown) { sn.resetShown = true; resetBtn.classList.add('show'); }
       }
     }
@@ -741,10 +800,12 @@
 
   function drawNebula(tb) {
     const neb = sn.neb;
-    const grow = 1 - Math.exp(-tb / 2.6);
+    // With a black hole, the leftover gas slowly gets dragged in and fades.
+    const eat = sn.bh ? Math.exp(-Math.max(0, tb - 4) / 14) : 1;
+    const grow = (1 - Math.exp(-tb / 2.6)) * eat;
     const Rn = 0.58 * S * grow;
     if (Rn < 1) return;
-    const fade = Math.min(1, tb / 1.2);
+    const fade = Math.min(1, tb / 1.2) * (0.3 + 0.7 * eat);
     ctx.save();
     ctx.globalCompositeOperation = 'lighter';
     for (const b of neb.blobs) {
@@ -796,6 +857,96 @@
     ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(cx, cy, 0.07 * S, 0, TAU); ctx.fill();
     ctx.fillStyle = `rgba(255,255,255,${fadeIn})`;
     ctx.beginPath(); ctx.arc(cx, cy, Math.max(2, 0.008 * S), 0, TAU); ctx.fill();
+    ctx.restore();
+  }
+
+  // Gravitational lensing: the stars behind the black hole get bent into a ring.
+  // Each thin ring of screen pixels shows the starfield scaled by the point-lens formula
+  // (light passing at distance d appears to come from d - E²/d).
+  function drawLens() {
+    const E = 0.115 * S * bhGrow(); // Einstein radius in pixels
+    if (E < 2) return;
+    const rin = BH_R * S, L = 0.55 * S, N = 36;
+    for (let i = 0; i < N; i++) {
+      const r0 = rin + ((L - rin) * i) / N, r1 = rin + ((L - rin) * (i + 1)) / N + 0.5;
+      const d = (r0 + r1) / 2, src = d - (E * E) / d;
+      let k = d / src;
+      if (!isFinite(k) || Math.abs(k) > 6) k = Math.sign(k || 1) * 6;
+      ctx.save();
+      ctx.beginPath(); ctx.arc(cx, cy, r1, 0, TAU); ctx.arc(cx, cy, r0, 0, TAU, true); ctx.clip();
+      ctx.translate(cx, cy); ctx.scale(k, k);
+      ctx.drawImage(starfield, -cx, -cy, W, H);
+      ctx.restore();
+    }
+  }
+
+  const DISK_TILT = 0.24, DISK_ROT = -0.18;
+  function diskXY(r, a) {
+    const x = Math.cos(a) * r * S, y = Math.sin(a) * r * S * DISK_TILT;
+    const c = Math.cos(DISK_ROT), s = Math.sin(DISK_ROT);
+    return [cx + x * c - y * s, cy + x * s + y * c];
+  }
+
+  function drawDiskHalf(front, al) {
+    for (const q of sn.disk) {
+      const a = q.a + simTime * 1.1 * ((BH_R * 1.5) / q.r) ** 1.5;
+      if ((Math.sin(a) >= 0) !== front) continue;
+      const [x, y] = diskXY(q.r, a);
+      const t = (q.r / BH_R - 1.5) / 2.6; // 0 = inner (hot), 1 = outer
+      const col = t < 0.3 ? '255,240,215' : t < 0.65 ? '255,175,90' : '255,105,50';
+      const beam = 0.35 + 0.65 * (0.5 - 0.5 * Math.cos(a)); // side coming toward us is brighter
+      ctx.fillStyle = `rgba(${col},${al * beam * (1 - t * 0.5)})`;
+      ctx.beginPath(); ctx.arc(x, y, q.s * Math.max(1, S / 500), 0, TAU); ctx.fill();
+    }
+    // smooth glow under the specks
+    for (let i = 0; i < 4; i++) {
+      const r = BH_R * (1.7 + i * 0.6) * S;
+      ctx.strokeStyle = `rgba(255,${190 - i * 30},${110 - i * 20},${0.13 * al})`;
+      ctx.lineWidth = BH_R * S * 0.5;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, r, r * DISK_TILT, DISK_ROT, front ? 0 : Math.PI, front ? Math.PI : TAU);
+      ctx.stroke();
+    }
+  }
+
+  function drawBlackHole() {
+    const g = bhGrow(), al = Math.min(1, g * 1.2);
+    const Rs = BH_R * S * g;
+    if (Rs < 1) return;
+    const flash = sn.bhFlash;
+    ctx.save();
+    ctx.globalCompositeOperation = 'lighter';
+    // warm halo
+    const halo = ctx.createRadialGradient(cx, cy, Rs, cx, cy, Rs * 6);
+    halo.addColorStop(0, `rgba(255,150,70,${0.22 * al + 0.3 * flash})`);
+    halo.addColorStop(1, 'rgba(255,90,40,0)');
+    ctx.fillStyle = halo; ctx.beginPath(); ctx.arc(cx, cy, Rs * 6, 0, TAU); ctx.fill();
+    drawDiskHalf(false, al);
+    // light from the back of the disk, bent up and over the hole
+    ctx.lineWidth = Rs * 0.35;
+    ctx.strokeStyle = `rgba(255,190,120,${0.45 * al + 0.4 * flash})`;
+    ctx.beginPath(); ctx.arc(cx, cy, Rs * 1.3, 0, TAU); ctx.stroke();
+    ctx.restore();
+    // the shadow
+    ctx.fillStyle = '#000';
+    ctx.beginPath(); ctx.arc(cx, cy, Rs, 0, TAU); ctx.fill();
+    ctx.save();
+    ctx.globalCompositeOperation = 'lighter';
+    ctx.lineWidth = Math.max(1, Rs * 0.08);
+    ctx.strokeStyle = `rgba(255,235,200,${0.8 * al})`;
+    ctx.beginPath(); ctx.arc(cx, cy, Rs * 1.04, 0, TAU); ctx.stroke(); // photon ring
+    drawDiskHalf(true, al);
+    ctx.restore();
+  }
+
+  // Spaghettification: stretched toward the hole as it spirals in.
+  function drawFalling(b) {
+    const { p, x, y, a } = fallPos(b);
+    if (p >= 1) return;
+    const sx = toScreenX(x), sy = toScreenY(y);
+    ctx.save();
+    ctx.translate(sx, sy); ctx.rotate(-a); ctx.scale(1 + 2.5 * p, 1 - 0.6 * p); ctx.translate(-sx, -sy);
+    drawPlanetAt(b, x, y, 1 - p * 0.7);
     ctx.restore();
   }
 
@@ -869,10 +1020,11 @@
     let shake = 0;
     if (mode === 'collapse' && sn.t > 0.35) shake = ((sn.t - 0.35) / (BOOM_AT - 0.35)) * 3;
     if (tb >= 0 && tb < 0.8) shake = 10 * (1 - tb / 0.8);
+    if (tb >= 0 && sn.bh) drawLens();
     ctx.save();
     if (shake) ctx.translate(rand(-shake, shake), rand(-shake, shake));
 
-    if (tb >= 0) { drawNebula(tb); drawPulsar(tb); }
+    if (tb >= 0) { drawNebula(tb); if (sn.bh) drawBlackHole(); else drawPulsar(tb); }
 
     for (const b of bodies) if (!b.eaten) drawTrail(b.trail, b, b.def.color, mode === 'rogue' ? 0.3 : 0.35, 1.2, false);
 
@@ -890,6 +1042,7 @@
     }
 
     for (const b of bodies) if (!b.eaten) drawPlanetAt(b, b.x, b.y, b.scale);
+    if (sn && sn.bh) for (const b of bodies) if (b.fall) drawFalling(b);
     if (comet) drawComet(comet);
     if (tb >= 0) drawExplosion(tb);
     ctx.restore();
