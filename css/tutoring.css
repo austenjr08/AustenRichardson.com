@@ -17,7 +17,6 @@
 .tutoring a:focus-visible,
 .tutoring button:focus-visible,
 .tutoring summary:focus-visible,
-.topbar a:focus-visible,
 .contact a:focus-visible,
 .skip-link:focus-visible {
   outline: 2px solid var(--accent);
