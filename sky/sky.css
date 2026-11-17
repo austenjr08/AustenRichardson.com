@@ -1,0 +1,82 @@
+/* Your Sky Tonight. Builds on ../css/page.css (colors, top bar, headings, .glance). */
+
+.skip-link {
+  position: absolute; left: 12px; top: -60px; z-index: 10;
+  padding: 8px 14px; border-radius: 8px; background: var(--accent); color: #02030a;
+}
+.skip-link:focus { top: 12px; text-decoration: none; }
+
+.sky { max-width: 860px; }
+.sky-hero { margin: 24px 0 26px; }
+
+.pill {
+  font: 400 12px/1 var(--font);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(233, 236, 255, 0.85);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.pill:hover:not(:disabled), .pill:focus-visible { color: #fff; background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.45); }
+.pill:disabled { opacity: 0.5; cursor: wait; }
+.pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.pill[hidden] { display: none; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; margin-top: 8px; }
+.day-nav, .place { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.day-nav #prev-day, .day-nav #next-day { font-size: 16px; padding: 5px 13px 7px; letter-spacing: 0; }
+.night-label { font-size: 16px; min-width: 12ch; text-align: center; }
+.place { color: var(--muted); font-size: 15px; }
+.place-note { min-height: 1.4em; margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+.place-note.bad { color: #ff9b8a; }
+
+/* At-a-glance tiles: page.css styles .glance; these add the moon icon */
+.glance dd { display: flex; align-items: center; gap: 8px; }
+.glance .sub { display: block; font-size: 12px; color: var(--muted); }
+.moon-icon { width: 26px; height: 26px; flex-shrink: 0; }
+
+/* Sky chart */
+.chart-wrap { position: relative; max-width: 620px; margin: 0 auto; }
+#chart { display: block; width: 100%; aspect-ratio: 1; touch-action: manipulation; cursor: crosshair; }
+.chart-tip {
+  position: absolute; pointer-events: none; transform: translate(-50%, calc(-100% - 12px));
+  background: rgba(6, 8, 22, 0.95); border: 1px solid var(--line); border-radius: 8px;
+  padding: 6px 10px; font-size: 13px; white-space: nowrap; line-height: 1.35;
+}
+.chart-tip[hidden] { display: none; }
+.chart-tip small { color: var(--muted); }
+
+.time-row { display: flex; align-items: center; gap: 14px; max-width: 620px; margin: 12px auto 0; }
+.time-label { min-width: 8.5ch; font-variant-numeric: tabular-nums; font-size: 15px; }
+#time-slider { flex: 1; accent-color: var(--accent); }
+.chart-help { max-width: 620px; margin: 10px auto 0; font-size: 14px; color: var(--muted); }
+
+/* Planet list */
+.planet-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.planet-list li { display: grid; grid-template-columns: 22px 1fr auto; gap: 4px 14px; align-items: start; padding: 14px 18px; background: rgba(6, 8, 22, 0.92); }
+.planet-dot { width: 14px; height: 14px; border-radius: 50%; margin-top: 5px; box-shadow: 0 0 10px currentColor; background: currentColor; }
+.planet-name { font-size: 17px; }
+.planet-when { grid-column: 2 / 4; margin: 0; font-size: 15px; color: rgba(233, 236, 255, 0.85); }
+.planet-meta { grid-column: 2 / 4; margin: 0; font-size: 13px; color: var(--muted); }
+.verdict { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; align-self: center; }
+.v-easy { color: #8ee6a8; }
+.v-bino { color: #f2cf6b; }
+.v-scope { color: #9fb7ff; }
+.v-no { color: rgba(225, 230, 255, 0.4); }
+.planet-list li.dim .planet-name { color: var(--muted); }
+
+/* Extras: meteor showers, close pairs */
+.extra { padding: 14px 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(6, 8, 22, 0.8); margin-bottom: 10px; }
+.extra b { color: var(--accent); font-weight: 500; }
+.extra p { margin: 4px 0 0; color: rgba(233, 236, 255, 0.85); font-size: 15px; }
+
+.fine-print { margin-top: 40px; font-size: 13px; color: var(--muted); }
+
+@media (max-width: 600px) {
+  .controls { flex-direction: column; align-items: flex-start; }
+  .planet-list li { padding: 12px 14px; }
+}

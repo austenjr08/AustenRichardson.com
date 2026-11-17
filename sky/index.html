@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Sky Tonight — AustenRichardson.com</title>
+  <meta name="description" content="Which planets you can see tonight, when the Moon rises, and a live chart of the night sky, computed in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%23ffb23f'/></svg>">
+  <link rel="stylesheet" href="../css/page.css">
+  <link rel="stylesheet" href="sky.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="brand" href="../index.html">Austen Richardson</a>
+    <nav class="topnav" aria-label="Site">
+      <a href="../index.html">← Back to the system</a>
+    </nav>
+  </header>
+
+  <main id="main" class="sky">
+    <section class="sky-hero">
+      <p class="eyebrow">Apps</p>
+      <h1>Your Sky Tonight</h1>
+      <p class="summary">Which planets are up tonight, where to look, and when, using the same orbital math as the solar system on the home page.</p>
+
+      <div class="controls">
+        <div class="day-nav">
+          <button class="pill" id="prev-day" type="button" aria-label="Previous night">‹</button>
+          <span id="night-label" class="night-label"></span>
+          <button class="pill" id="next-day" type="button" aria-label="Next night">›</button>
+          <button class="pill" id="tonight-btn" type="button" hidden>Tonight</button>
+        </div>
+        <div class="place">
+          <span id="place-label"></span>
+          <button class="pill" id="locate-btn" type="button">Use my location</button>
+        </div>
+      </div>
+      <p class="place-note" id="place-note" role="status"></p>
+    </section>
+
+    <dl class="glance" id="glance"></dl>
+
+    <h2>The sky</h2>
+    <div class="chart-wrap">
+      <canvas id="chart" role="img" aria-label="Chart of the night sky"></canvas>
+      <div class="chart-tip" id="chart-tip" hidden></div>
+    </div>
+    <div class="time-row">
+      <label for="time-slider" class="time-label" id="time-label"></label>
+      <input type="range" id="time-slider" min="0" max="100" value="0">
+      <button class="pill" id="now-btn" type="button">Now</button>
+    </div>
+    <p class="chart-help">Hold the chart over your head with the top toward north: east is on the left, the edge is the horizon, and the center is straight up. Drag the slider to move through the night, and tap anything to name it.</p>
+
+    <h2>Planets tonight</h2>
+    <ul class="planet-list" id="planet-list"></ul>
+
+    <div id="extras"></div>
+
+    <p class="fine-print">Positions are computed in your browser from NASA JPL orbital elements and checked against JPL’s Horizons ephemeris. If you use your location, it never leaves your device. Times are in your device’s time zone.</p>
+  </main>
+
+  <script src="../js/stats.js"></script>
+  <script src="../js/page.js"></script>
+  <script src="astro.js"></script>
+  <script src="sky.js"></script>
+</body>
+</html>
