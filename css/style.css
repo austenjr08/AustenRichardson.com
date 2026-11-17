@@ -115,12 +115,19 @@ body {
   transition: opacity 0.8s ease;
 }
 
-/* ---------- Tutoring link (top-right) ---------- */
-#tutoring-link {
+/* ---------- Site links: Tutoring and Lana Del Krillion (top-right) ---------- */
+#site-links {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.site-link {
   padding: 9px 18px;
   font: 400 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   letter-spacing: 0.22em;
@@ -135,17 +142,17 @@ body {
   transition: color 0.2s, background 0.2s, border-color 0.2s;
 }
 
-#tutoring-link:hover,
-#tutoring-link:focus-visible {
+.site-link:hover,
+.site-link:focus-visible {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.45);
 }
 
-/* The reset button (after a supernova) sits just below the Tutoring link */
-#reset { top: 66px; }
+/* The reset button (after a supernova) sits just below the site links */
+#reset { top: 112px; }
 
-#tutoring-link:focus-visible {
+.site-link:focus-visible {
   outline: 2px solid rgba(255, 196, 110, 0.9);
   outline-offset: 4px;
 }
@@ -180,10 +187,10 @@ body {
 }
 
 @media (max-width: 600px) {
-  /* Leave room above the name for the Tutoring link on narrow screens */
-  #masthead { padding-top: 58px; }
-  #tutoring-link { top: 14px; right: 14px; }
-  /* Reset sits top-left, level with Tutoring, so it never covers the name */
+  /* Site links stack on narrow screens; leave room above the name for them */
+  #masthead { padding-top: 98px; }
+  #site-links { top: 14px; right: 14px; }
+  /* Reset sits top-left, level with the links, so it never covers the name */
   #reset { top: 14px; right: auto; left: 14px; }
   #hint {
     bottom: 64px;

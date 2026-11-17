@@ -144,14 +144,15 @@
     { v: 700, label: 'Venice Beach', emoji: '🌊' },
   ];
 
-  // Final "era", by average points per round.
-  const ERAS = [
-    { min: 85, name: 'Did You Know That There’s a Tunnel Under Ocean Blvd' },
-    { min: 70, name: 'Blue Banisters' },
-    { min: 55, name: 'Honeymoon' },
-    { min: 40, name: 'Ultraviolence' },
-    { min: 25, name: 'Paradise' },
-    { min: 0,  name: 'Born to Die' },
+  // Final status, by average points per round: from playing basements to playing stadiums.
+  const STATUS = [
+    { min: 85, name: 'Superstar', emoji: '🌟', blurb: 'Stadiums, magazine covers, the whole thing.' },
+    { min: 72, name: 'Headliner', emoji: '🎤', blurb: 'Your name is at the top of the poster.' },
+    { min: 60, name: 'Rising Star', emoji: '🚀', blurb: 'The blogs are starting to notice.' },
+    { min: 48, name: 'Opening Act', emoji: '🎸', blurb: 'Warming up the crowd for someone famous.' },
+    { min: 36, name: 'Local Legend', emoji: '🏙️', blurb: 'Everyone in town knows your name.' },
+    { min: 24, name: 'Open Mic', emoji: '🎙️', blurb: 'Five minutes and a borrowed guitar.' },
+    { min: 0,  name: 'Underground', emoji: '🕳️', blurb: 'Playing basements. Everyone starts somewhere.' },
   ];
 
   // ---------- Helpers ----------
@@ -224,14 +225,33 @@
 
   // ---------- APIs ----------
 
-  // Deezer has no CORS headers, but supports JSONP.
+  // Deezer has no CORS headers, but supports JSONP. It allows about 50 requests per 5 seconds,
+  // so requests are spaced out, and a "quota exceeded" reply is waited out and retried.
   const dzCache = new Map();
-  let dzN = 0;
+  let dzN = 0, dzNext = 0;
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
   function dz(path, params = {}) {
     const q = new URLSearchParams({ ...params, output: 'jsonp' });
     const key = path + '?' + q;
     if (dzCache.has(key)) return dzCache.get(key);
-    const p = new Promise((resolve, reject) => {
+    const p = (async () => {
+      for (let attempt = 0; ; attempt++) {
+        const wait = Math.max(0, dzNext - Date.now());
+        dzNext = Date.now() + wait + 120;
+        await sleep(wait);
+        try { return await dzOnce(path, q); } catch (e) {
+          if (!/quota/i.test(e.message) || attempt >= 3) throw e;
+          await sleep(2000 * (attempt + 1));
+        }
+      }
+    })();
+    dzCache.set(key, p);
+    p.catch(() => dzCache.delete(key));
+    return p;
+  }
+  function dzOnce(path, params) {
+    const q = new URLSearchParams(params);
+    return new Promise((resolve, reject) => {
       const cb = 'lanaDz' + (++dzN);
       q.set('callback', cb);
       const s = document.createElement('script');
@@ -242,9 +262,6 @@
       s.src = `https://api.deezer.com/${path}?${q}`;
       document.head.appendChild(s);
     });
-    dzCache.set(key, p);
-    p.catch(() => dzCache.delete(key));
-    return p;
   }
 
   // MusicBrainz asks for at most one request per second.
@@ -314,6 +331,60 @@
     return { list: [...byTitle.values()].sort((x, y) => y.fans - x.fans), singles: (d.data || []).filter(x => x.record_type === 'single') };
   }
 
+  // ---------- Example answers (for the end-of-game review) ----------
+  // Each question type can list real answers with the points they'd score. The review groups
+  // them by rarity category and shows a few from each.
+
+  // Run fn over items with at most n at a time.
+  async function pool(items, n, fn) {
+    const out = new Array(items.length);
+    let next = 0;
+    await Promise.all(Array.from({ length: Math.min(n, items.length) }, async () => {
+      while (next < items.length) { const i = next++; try { out[i] = await fn(items[i]); } catch (e) { out[i] = null; } }
+    }));
+    return out;
+  }
+
+  // Score a list of artist names the same way an answer would be scored.
+  async function scoreNames(names) {
+    const seen = new Set();
+    const uniq = names.filter(n => { const k = norm(n); if (!k || seen.has(k)) return false; seen.add(k); return true; });
+    // findArtist gives null for "not on Deezer" (as niche as it gets); a failed lookup is dropped.
+    const found = await pool(uniq, 4, n => findArtist(n).then(a => ({ a }), () => null));
+    return uniq.map((n, i) => {
+      const f = found[i];
+      if (!f) return null;
+      return f.a ? { name: f.a.name, pts: artistPoints(f.a.fans) } : { name: n, pts: 100 };
+    }).filter(Boolean);
+  }
+
+  // Artist names from a MusicBrainz search. Better-documented artists (more tags) come first,
+  // which mixes in well-known names rather than only obscure ones.
+  const PLACEHOLDERS = /^(various artists|traditional|anonymous|unknown|\[.*\])$/i;
+  async function mbNames(query, { take = 36, tag = null } = {}) {
+    const d = await mb('artist', { query, limit: 100 });
+    // With a genre tag, only keep artists where it's one of their main tags, so a stray
+    // "shoegaze" tag on Oasis doesn't make Oasis a shoegaze example.
+    const mainTag = a => {
+      const tags = (a.tags || []).slice().sort((x, y) => y.count - x.count).slice(0, 6);
+      return tags.some(t => t.name.toLowerCase().includes(tag));
+    };
+    return (d.artists || [])
+      .filter(a => !PLACEHOLDERS.test(a.name) && (!tag || mainTag(a)))
+      .sort((a, b) => (b.tags || []).length - (a.tags || []).length)
+      .slice(0, take).map(latinName);
+  }
+  // Deezer lists 坂本龍一 as "Ryuichi Sakamoto", so use an English alias (or the
+  // "Sakamoto, Ryuichi" sort name) when MusicBrainz's main name isn't in Latin letters.
+  function latinName(a) {
+    if (!/[^\u0000-\u024f\s]/.test(a.name)) return a.name;
+    const al = (a.aliases || []).find(x => x.locale === 'en' && x.primary) || (a.aliases || []).find(x => x.locale === 'en');
+    if (al) return al.name;
+    const sn = a['sort-name'] || '';
+    if (sn && !/[^\u0000-\u024f\s]/.test(sn)) return sn.includes(', ') ? sn.split(', ').reverse().join(' ') : sn;
+    return a.name;
+  }
+
   // ---------- Scoring ----------
 
   // Artist popularity → points. ~15M Deezer fans or more → 5, 1M → ~26, 100K → ~49, 10K → ~71, 1K → ~93.
@@ -335,6 +406,21 @@
       return {
         type: 'Song', text: `Name a song by ${artist}`, hint: 'Deep cuts beat the singles.',
         fields: [{ id: 'song', label: 'Song title' }],
+        async examples() {
+          const a = await findArtist(artist);
+          const list = await topSongs(a);
+          const ex = list.map((x, i) => ({ name: x.title, pts: positionPoints(i + 1, list.length + 1) }));
+          // Album tracks outside the top 100 are the deepest cuts.
+          const { list: albums } = await albumList(a);
+          for (const al of albums.slice(-2)) {
+            const tr = await dz(`album/${al.id}/tracks`, { limit: 50 });
+            for (const t of tr.data || []) {
+              const c = cleanTitle(t.title);
+              if (!list.some(x => norm(x.title) === norm(c))) ex.push({ name: c, pts: 100 });
+            }
+          }
+          return ex;
+        },
         async check({ song }) {
           const a = await findArtist(artist);
           if (!a) throw new Error('lookup');
@@ -364,6 +450,10 @@
       return {
         type: 'Album', text: `Name an album or EP by ${artist}`, hint: 'Studio albums, EPs, live albums and compilations all count.',
         fields: [{ id: 'album', label: 'Album title' }],
+        async examples() {
+          const { list } = await albumList(await findArtist(artist));
+          return list.map((x, i) => ({ name: cleanTitle(x.title), pts: list.length < 2 ? 5 : positionPoints(i + 1, list.length) }));
+        },
         async check({ album }) {
           const a = await findArtist(artist);
           if (!a) throw new Error('lookup');
@@ -388,6 +478,14 @@
       return {
         type: 'Collab', text: `Name an artist who has a song with ${artist}`, hint: 'Features count, in either direction.',
         fields: [{ id: 'who', label: 'Artist' }],
+        async examples() {
+          const a = await findArtist(artist);
+          const top = await dz(`artist/${a.id}/top`, { limit: 100 });
+          const ids = new Map();
+          for (const t of top.data || []) for (const c of t.contributors || []) if (c.id !== a.id) ids.set(c.id, c.name);
+          const info = await pool([...ids.keys()].slice(0, 30), 4, id => dz(`artist/${id}`));
+          return info.filter(Boolean).map(x => ({ name: x.name, pts: artistPoints(x.nb_fan || 0) }));
+        },
         async check({ who }) {
           const [a, b] = await Promise.all([findArtist(artist), findArtist(who)]);
           if (!a) throw new Error('lookup');
@@ -422,6 +520,10 @@
       return {
         type: 'Genre', text: `Name ${an} ${genre.label} artist`, hint: 'Solo artists and bands both count.',
         fields: [{ id: 'who', label: 'Artist' }],
+        async examples() {
+          const tag = genre.tags[0];
+          return scoreNames(await mbNames(`tag:${luceneQuote(tag)}`, { tag }));
+        },
         async check({ who }) {
           const a = await findArtist(who);
           if (!a) throw new Miss(`Couldn’t find an artist called “${who}”.`);
@@ -451,6 +553,18 @@
       return {
         type: 'Title', text: `Name a song with “${word}” in the title`, hint: 'Any artist, any era. Just the title.',
         fields: [{ id: 'song', label: 'Song title' }],
+        async examples() {
+          const pages = await Promise.all([0, 100, 200].map(index => dz('search', { q: word, limit: 100, index })));
+          const seen = new Set();
+          const ex = [];
+          for (const t of pages.flatMap(p => p.data || [])) {
+            const c = cleanTitle(t.title);
+            if (!hasWord(c) || seen.has(norm(c))) continue;
+            seen.add(norm(c));
+            ex.push({ name: c, sub: t.artist.name, pts: trackPoints(t.rank) });
+          }
+          return ex;
+        },
         async check({ song }) {
           // Title only, so score the best-known song with that title: a title shared with a
           // big hit is a common answer even if you meant a deeper cut.
@@ -478,6 +592,7 @@
       return {
         type: 'Origin', text: `Name an artist from ${c.name}`, hint: 'Where they were born or formed.',
         fields: [{ id: 'who', label: 'Artist' }],
+        async examples() { return scoreNames(await mbNames(`country:${c.code}`)); },
         async check({ who }) {
           const a = await findArtist(who);
           const name = a ? a.name : who;
@@ -499,6 +614,7 @@
       return {
         type: 'Era', text: `Name a band that formed in the ${d}s`, hint: 'Groups only, no solo artists.',
         fields: [{ id: 'who', label: 'Band' }],
+        async examples() { return scoreNames(await mbNames(`type:group AND begin:[${d} TO ${d + 10}}`)); },
         async check({ who }) {
           const a = await findArtist(who);
           const name = a ? a.name : who;
@@ -521,6 +637,7 @@
       return {
         type: 'Era', text: `Name a solo artist born in the ${d}s`, hint: 'Singers, rappers, producers, anyone solo.',
         fields: [{ id: 'who', label: 'Artist' }],
+        async examples() { return scoreNames(await mbNames(`type:person AND begin:[${d} TO ${d + 10}}`)); },
         async check({ who }) {
           const a = await findArtist(who);
           const name = a ? a.name : who;
@@ -543,6 +660,12 @@
       return {
         type: 'Letter', text: `Name an artist whose name starts with “${L}”`, hint: 'Leading “The” doesn’t count. The Strokes is an S.',
         fields: [{ id: 'who', label: 'Artist' }],
+        async examples() {
+          const pages = await Promise.all([L, L + 'a', L + 'e', L + 'o', L + 'i'].map(q => dz('search/artist', { q, limit: 100 })));
+          return pages.flatMap(p => p.data || [])
+            .filter(a => norm(a.name)[0] === L.toLowerCase() && a.nb_fan > 0)
+            .map(a => ({ name: a.name, pts: artistPoints(a.nb_fan) }));
+        },
         async check({ who }) {
           const a = await findArtist(who);
           if (!a) throw new Miss(`Couldn’t find an artist called “${who}”.`);
@@ -890,7 +1013,7 @@
     if (r && r.img) { img.src = r.img; img.hidden = false; } else { img.hidden = true; img.removeAttribute('src'); }
     $('r-common').innerHTML = r && r.common && r.common.length
       ? `Most common answers: ${r.common.map(c => `<b>${esc(c)}</b>`).join(', ')}` : '';
-    $('next-btn').textContent = game.i + 1 >= ROUNDS ? 'See your era' : 'Next';
+    $('next-btn').textContent = game.i + 1 >= ROUNDS ? 'See your status' : 'Next';
     $('result').hidden = false;
     $('next-btn').focus({ preventScroll: true });
     // Keep the road in view so the drive is visible.
@@ -906,22 +1029,55 @@
 
   function renderEnd() {
     const avg = game.total / ROUNDS;
-    const era = ERAS.find(e => avg >= e.min);
+    const st = STATUS.find(e => avg >= e.min);
+    const up = STATUS[STATUS.indexOf(st) - 1];
     const genreLabel = CHOICES.find(c => c.id === genre).label;
-    $('final-era').textContent = era.name;
+    $('final-era').textContent = `${st.emoji} ${st.name}`;
+    $('final-blurb').textContent = st.blurb + (up ? ` (${up.name} starts at ${up.min * ROUNDS} points.)` : '');
     $('final-score').textContent = `${game.total} / ${ROUNDS * 100} points · ${genreLabel}`;
     $('final-squares').textContent = game.results.map(x => tierFor(x.r ? x.r.pts : 0).emoji).join('');
     $('final-trip').textContent = reached ? `Road trip: made it to ${reached.label} ${reached.emoji}` : 'Road trip: never left Compton';
-    $('recap').innerHTML = game.results.map(({ q, r }) =>
-      `<li>${esc(q.text)}: ${r ? `<b>${esc(r.name)}</b> · ${r.pts} (${tierFor(r.pts).name})` : '<b>no answer</b> (Wrong Turn)'}</li>`).join('');
+    $('recap').innerHTML = game.results.map(({ q, r }, i) => {
+      const t = tierFor(r ? r.pts : 0);
+      return `<li><details data-i="${i}"><summary>` +
+        `<span class="rv-q">${esc(q.text)}</span>` +
+        `<span class="rv-a"><b>${r ? esc(r.name) : 'No answer'}</b> · <span class="tier ${t.cls}">${t.emoji} ${t.name}</span> · ${r ? r.pts : 0} pts</span>` +
+        `</summary><div class="rv-ex"></div></details></li>`;
+    }).join('');
     $('share-msg').textContent = '';
     show('screen-end');
     if (window.siteStats) window.siteStats.send('krillion', `${genreLabel}: ${game.total}`);
   }
 
+  // Tap a question in the review to see example answers from every rarity category.
+  $('recap').addEventListener('toggle', async e => {
+    const det = e.target;
+    if (!det.open || det.dataset.loaded) return;
+    det.dataset.loaded = '1';
+    const box = det.querySelector('.rv-ex');
+    const { q } = game.results[+det.dataset.i];
+    box.innerHTML = '<p class="rv-wait">Digging up examples…</p>';
+    try {
+      const all = (await q.examples()).filter(Boolean);
+      box.innerHTML = TIERS.filter(t => t.min > 0).reverse().map(t => {
+        const inTier = all.filter(x => tierFor(x.pts) === t).sort((a, b) => a.pts - b.pts);
+        // Up to 4, spread across the range.
+        const picks = inTier.length <= 4 ? inTier : [0, 1, 2, 3].map(k => inTier[Math.round(k * (inTier.length - 1) / 3)]);
+        const list = picks.length
+          ? picks.map(x => `<span class="rv-pick">${esc(x.name)}${x.sub ? ` <small>${esc(x.sub)}</small>` : ''} <em>${x.pts}</em></span>`).join('')
+          : '<span class="rv-none">none found</span>';
+        return `<div class="rv-row"><span class="tier ${t.cls}">${t.emoji} ${t.name} <small>${tierRange(t)}</small></span><div class="rv-picks">${list}</div></div>`;
+      }).join('');
+    } catch (err) {
+      console.error(err);
+      delete det.dataset.loaded;
+      box.innerHTML = '<p class="rv-wait">Couldn’t load examples. Close and tap again to retry.</p>';
+    }
+  }, true);
+
   $('share-btn').addEventListener('click', async () => {
     const text = `🦐 Lana Del Krillion (${CHOICES.find(c => c.id === genre).label})\n` +
-      `${game.total}/${ROUNDS * 100} · ${$('final-era').textContent} era\n` +
+      `${game.total}/${ROUNDS * 100} · ${$('final-era').textContent} status\n` +
       `${$('final-trip').textContent}\n` +
       `${$('final-squares').textContent}\n${location.origin}${location.pathname}`;
     try {

@@ -168,9 +168,37 @@ main {
 .final h2 { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.5rem, 5vw, 2.1rem); margin: 6px 0; }
 .final-score { font-size: 1.1rem; margin: 0; }
 .final-squares { font-size: 1.6rem; letter-spacing: 0.15em; margin: 10px 0; }
-.recap { text-align: left; padding-left: 22px; margin: 16px 0; color: var(--cream-dim); font-size: 0.92rem; }
-.recap li { margin-bottom: 6px; }
-.recap b { color: var(--cream); font-weight: 600; }
+.final-blurb { margin: 0 0 8px; color: var(--cream-dim); font-style: italic; }
+
+/* Answer review */
+.review-title { font-family: var(--serif); font-weight: 400; font-size: 1.2rem; margin: 22px 0 2px; }
+.review-hint { margin: 0 0 10px; color: var(--cream-dim); font-size: 0.85rem; }
+.recap { list-style: none; text-align: left; padding: 0; margin: 0 0 18px; font-size: 0.92rem; }
+.recap li { border-top: 1px solid rgba(243, 233, 215, 0.12); }
+.recap li:last-child { border-bottom: 1px solid rgba(243, 233, 215, 0.12); }
+.recap summary {
+  cursor: pointer; list-style: none; padding: 10px 26px 10px 4px; position: relative;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.recap summary::-webkit-details-marker { display: none; }
+.recap summary::after { content: '+'; position: absolute; right: 6px; top: 10px; color: var(--gold); font-size: 1.1rem; }
+.recap details[open] summary::after { content: '−'; }
+.recap summary:hover .rv-q { color: var(--cream); }
+.rv-q { color: var(--cream-dim); }
+.rv-a { color: var(--cream-dim); font-size: 0.86rem; }
+.rv-a b { color: var(--cream); font-weight: 600; }
+.rv-a .tier { display: inline; font-size: 0.72rem; }
+.rv-ex { padding: 2px 4px 12px; }
+.rv-wait { margin: 4px 0; color: var(--gold); font-style: italic; font-size: 0.85rem; }
+.rv-row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 10px; padding: 6px 0; align-items: baseline; }
+.rv-row .tier { font-size: 0.7rem; letter-spacing: 0.08em; }
+.rv-row .tier small { display: block; letter-spacing: 0; text-transform: none; font-weight: 400; color: var(--cream-dim); }
+.rv-picks { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.rv-pick { background: rgba(243, 233, 215, 0.07); border-radius: 6px; padding: 2px 8px; color: var(--cream); }
+.rv-pick small { color: var(--cream-dim); }
+.rv-pick em { font-style: normal; color: var(--gold); font-size: 0.8rem; margin-left: 2px; }
+.rv-none { color: rgba(243, 233, 215, 0.35); font-style: italic; }
+@media (max-width: 480px) { .rv-row { grid-template-columns: 1fr; gap: 4px; } }
 
 .credits { position: relative; z-index: 1; font-size: 0.75rem; color: rgba(243, 233, 215, 0.4); padding: 18px; text-align: center; }
 
