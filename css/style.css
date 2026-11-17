@@ -201,6 +201,69 @@ body {
   outline-offset: 4px;
 }
 
+/* ---------- My most listened this week (left side) ---------- */
+#listening[hidden] { display: none; }
+#listening {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 300px;
+}
+#listening-btn { display: none; }
+
+.listening-panel {
+  padding: 16px 16px 12px;
+  background: rgba(10, 12, 28, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: rgba(233, 236, 255, 0.9);
+}
+.listening-panel h2 {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #ffb23f;
+}
+#listening-list { list-style: none; margin: 0; padding: 0; }
+#listening-list a {
+  display: grid;
+  grid-template-columns: 16px 40px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 6px;
+  margin: 0 -6px;
+  border-radius: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+#listening-list a:hover, #listening-list a:focus-visible { background: rgba(255, 255, 255, 0.07); outline: none; }
+.lt-rank { font-size: 13px; color: rgba(225, 230, 255, 0.5); text-align: right; font-variant-numeric: tabular-nums; }
+.lt-art { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; background: rgba(255, 255, 255, 0.08); }
+.lt-text { min-width: 0; line-height: 1.25; }
+.lt-name, .lt-artist { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lt-name { font-size: 14px; color: #fff; }
+.lt-artist { font-size: 12px; color: rgba(225, 230, 255, 0.6); }
+.lt-plays { font-size: 14px; color: rgba(255, 178, 63, 0.9); text-align: right; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.lt-plays small { display: block; font-size: 10px; letter-spacing: 0.06em; color: rgba(225, 230, 255, 0.45); }
+.listening-empty { margin: 4px 0 6px; font-size: 13px; color: rgba(225, 230, 255, 0.6); }
+.listening-foot { margin: 8px 0 0; font-size: 11px; letter-spacing: 0.04em; color: rgba(225, 230, 255, 0.45); }
+
+/* Narrower screens: a small "This week" button at the bottom left that opens the chart. */
+@media (max-width: 1100px) {
+  #listening { top: auto; bottom: 20px; transform: none; width: auto; }
+  #listening-btn { display: inline-flex; gap: 6px; align-items: center; }
+  .listening-panel { position: absolute; left: 0; bottom: calc(100% + 10px); width: min(320px, calc(100vw - 28px)); background: rgba(10, 12, 28, 0.92); }
+  #listening:not(.open) .listening-panel { display: none; }
+}
+
 /* ---------- Contact icons ---------- */
 #contact {
   position: fixed;
@@ -242,6 +305,7 @@ body {
   #site-links { top: 14px; right: 14px; }
   /* Reset sits top-left, level with the links, so it never covers the name */
   #reset { top: 14px; right: auto; left: 14px; }
+  #listening { left: 14px; bottom: 14px; }
   #hint {
     bottom: 64px;
     font-size: 12px;

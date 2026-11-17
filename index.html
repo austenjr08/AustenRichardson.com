@@ -30,6 +30,16 @@
     </div>
   </nav>
 
+  <!-- My most listened this week (filled from data/spotify-week.json by js/listening.js) -->
+  <aside id="listening" aria-labelledby="listening-title" hidden>
+    <button class="site-link" id="listening-btn" type="button" aria-expanded="false" aria-controls="listening-panel"><span aria-hidden="true">♫</span> This week</button>
+    <div class="listening-panel" id="listening-panel">
+      <h2 id="listening-title">My most listened this week</h2>
+      <ol id="listening-list"></ol>
+      <p class="listening-foot" id="listening-foot"></p>
+    </div>
+  </aside>
+
   <!-- Contact links -->
   <nav id="contact" aria-label="Contact">
     <a href="https://www.linkedin.com/in/austen-richardson-918320334/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
@@ -47,5 +57,6 @@
   <script src="js/stats.js"></script>
   <script src="js/main.js"></script>
   <script src="js/apps-menu.js"></script>
+  <script src="js/listening.js"></script>
 </body>
 </html>
