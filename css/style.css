@@ -115,16 +115,15 @@ body {
   transition: opacity 0.8s ease;
 }
 
-/* ---------- Site links: Tutoring and Lana Del Krillion (top-right) ---------- */
+/* ---------- Site links: Tutoring pill and Apps dropdown (top-right) ---------- */
 #site-links {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 2;
+  z-index: 3;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .site-link {
@@ -140,17 +139,62 @@ body {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   transition: color 0.2s, background 0.2s, border-color 0.2s;
+  cursor: pointer;
 }
 
 .site-link:hover,
-.site-link:focus-visible {
+.site-link:focus-visible,
+.site-link[aria-expanded="true"] {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.45);
 }
 
 /* The reset button (after a supernova) sits just below the site links */
-#reset { top: 112px; }
+#reset { top: 66px; }
+
+/* Apps dropdown */
+.apps { position: relative; }
+#apps-btn { display: inline-flex; align-items: center; gap: 6px; }
+#apps-btn .caret { font-size: 10px; letter-spacing: 0; transition: transform 0.2s; }
+#apps-btn[aria-expanded="true"] .caret { transform: rotate(180deg); }
+
+.apps-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 190px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: rgba(14, 16, 32, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  animation: apps-in 0.16s ease;
+}
+.apps-menu[hidden] { display: none; }
+@keyframes apps-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+.apps-menu a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 9px;
+  font: 400 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(233, 236, 255, 0.85);
+  text-decoration: none;
+}
+.apps-menu a:hover,
+.apps-menu a:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
 
 .site-link:focus-visible {
   outline: 2px solid rgba(255, 196, 110, 0.9);
@@ -186,9 +230,15 @@ body {
   display: block;
 }
 
+/* Below ~1320px wide the name is wide enough to reach the top-right links, so it moves
+   down below them (phones do the same, further down). */
+@media (max-width: 1320px) {
+  #masthead { padding-top: 62px; }
+}
+
 @media (max-width: 600px) {
-  /* Site links stack on narrow screens; leave room above the name for them */
-  #masthead { padding-top: 98px; }
+  /* Leave room above the name for the site links on narrow screens */
+  #masthead { padding-top: 58px; }
   #site-links { top: 14px; right: 14px; }
   /* Reset sits top-left, level with the links, so it never covers the name */
   #reset { top: 14px; right: auto; left: 14px; }
