@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lana Del Krillion</title>
+  <meta name="description" content="A music trivia game where the nichest answer wins.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🦐</text></svg>">
+  <link rel="stylesheet" href="krillion.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="home-link" href="../index.html">← AustenRichardson.com</a>
+
+  <main id="app" aria-live="polite">
+    <!-- Start screen -->
+    <section id="screen-start" class="screen">
+      <header class="masthead">
+        <p class="script">Lana Del</p>
+        <h1>KRILLION</h1>
+        <p class="tagline">The nichest answer wins.</p>
+      </header>
+
+      <div class="card rules">
+        <p>Each round asks a music question, like <em>name a song by Lana Del Rey</em> or <em>name a shoegaze artist</em>. Any real answer counts. It doesn’t have to be on a list.</p>
+        <p>You get <b>25 seconds</b> per question and can guess as many times as you like.</p>
+        <p>Every answer is checked live and ranked by how popular it is. Big radio hits score low. Deep cuts nobody else would think of score high.</p>
+        <ul class="tier-legend" id="tier-legend"></ul>
+      </div>
+
+      <h2 class="section-label">Pick a category</h2>
+      <div class="chips" id="genre-chips" role="radiogroup" aria-label="Category"></div>
+
+      <button class="btn btn-primary" id="start-btn">Start the record</button>
+    </section>
+
+    <!-- Road trip: the car moves with your total points. Moved between screens by the script. -->
+    <div class="road" id="road" hidden>
+      <div class="road-scene" id="road-scene"></div>
+      <ul class="ladder" id="ladder" aria-label="Rarity categories"></ul>
+    </div>
+
+    <!-- Round screen -->
+    <section id="screen-round" class="screen" hidden>
+      <div class="round-top">
+        <span id="round-count">Round 1 / 7</span>
+        <span id="round-score">0 pts</span>
+      </div>
+      <div class="progress"><div id="progress-bar"></div></div>
+
+      <div class="card question" id="q-card">
+        <p class="q-type" id="q-type"></p>
+        <h2 class="q-text" id="q-text"></h2>
+        <p class="q-hint" id="q-hint"></p>
+        <div class="timer" id="timer" role="timer" aria-label="Time left">
+          <div class="timer-track"><div id="timer-bar"></div></div>
+          <span id="timer-num">25s</span>
+        </div>
+
+        <form id="answer-form" autocomplete="off">
+          <div id="inputs"></div>
+          <div class="form-row">
+            <button class="btn btn-primary" type="submit" id="submit-btn">Lock it in</button>
+            <button class="btn btn-ghost" type="button" id="skip-btn">Skip</button>
+          </div>
+        </form>
+        <p class="msg" id="msg" role="status"></p>
+      </div>
+
+      <div class="card result" id="result" hidden>
+        <div class="result-main">
+          <img id="r-img" alt="" hidden>
+          <div>
+            <p class="tier" id="r-tier"></p>
+            <h3 id="r-name"></h3>
+            <p class="r-detail" id="r-detail"></p>
+          </div>
+          <p class="r-points" id="r-points"></p>
+        </div>
+        <p class="r-common" id="r-common"></p>
+        <button class="btn btn-primary" id="next-btn">Next</button>
+      </div>
+    </section>
+
+    <!-- End screen -->
+    <section id="screen-end" class="screen" hidden>
+      <header class="masthead small">
+        <p class="script">Lana Del</p>
+        <h1>KRILLION</h1>
+      </header>
+      <div class="card final" id="final-card">
+        <p class="final-label">Your era</p>
+        <h2 id="final-era"></h2>
+        <p class="final-score" id="final-score"></p>
+        <p class="final-squares" id="final-squares"></p>
+        <p class="final-trip" id="final-trip"></p>
+        <ol class="recap" id="recap"></ol>
+        <div class="form-row center">
+          <button class="btn btn-primary" id="share-btn">Copy result</button>
+          <button class="btn btn-ghost" id="again-btn">Play again</button>
+        </div>
+        <p class="msg" id="share-msg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="credits">Popularity from Deezer · facts and genres from MusicBrainz</footer>
+
+  <script src="../js/stats.js"></script>
+  <script src="krillion.js"></script>
+</body>
+</html>
