@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-17T20:30:53.549Z",
-  "updated": "2026-11-17T20:34:09.085Z",
+  "cursor": "2026-11-18T02:54:05.501Z",
+  "updated": "2026-11-18T02:57:59.508Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -112,8 +112,8 @@
       "artist": "Playboi Carti",
       "art": "https://i.scdn.co/image/ab67616d00001e0298ea0e689c91f8fea726d9bb",
       "url": "https://open.spotify.com/track/0cgD36xPIJBdKUNJRHYDgP",
-      "plays": 1,
-      "last": "2026-11-16T21:05:29.079Z"
+      "plays": 2,
+      "last": "2026-11-17T20:45:13.351Z"
     },
     "7cHhlnawdN87aZbjO6LMRN": {
       "name": "SOUTH ATLANTA BABY",
@@ -320,8 +320,8 @@
       "artist": "Lil Peep, rainy bear",
       "art": "https://i.scdn.co/image/ab67616d00001e02254820046b555c7751e67f76",
       "url": "https://open.spotify.com/track/4k3xDpAdBuM17mNNHhOZkK",
-      "plays": 1,
-      "last": "2026-11-17T19:42:32.860Z"
+      "plays": 2,
+      "last": "2026-11-17T22:21:58.322Z"
     },
     "3daUZMkia3HT0E7xITejR6": {
       "name": "poochie gown",
@@ -394,6 +394,198 @@
       "url": "https://open.spotify.com/track/4R5bSS8yoCl2czeWLr61aO",
       "plays": 1,
       "last": "2026-11-17T20:30:53.549Z"
+    },
+    "2epSrh6IjiIb2F0O4QLu4b": {
+      "name": "Kryptonite",
+      "artist": "Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e0253b16cd45ce027fc7b65f9e8",
+      "url": "https://open.spotify.com/track/2epSrh6IjiIb2F0O4QLu4b",
+      "plays": 1,
+      "last": "2026-11-17T20:36:56.422Z"
+    },
+    "600s08VdbjiyAjDGDjYSFI": {
+      "name": "Interstate Love Song",
+      "artist": "Stone Temple Pilots",
+      "art": "https://i.scdn.co/image/ab67616d00001e0277696910e15c42a5e37636e5",
+      "url": "https://open.spotify.com/track/600s08VdbjiyAjDGDjYSFI",
+      "plays": 1,
+      "last": "2026-11-17T20:54:22.011Z"
+    },
+    "6dmueYtoihUhlQZlImBCmm": {
+      "name": "Creep - 2017 Remaster",
+      "artist": "Stone Temple Pilots",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b8bc0f023ff7a1c6663f28ec",
+      "url": "https://open.spotify.com/track/6dmueYtoihUhlQZlImBCmm",
+      "plays": 1,
+      "last": "2026-11-17T21:00:17.249Z"
+    },
+    "2JuasWPUodaUxf5nwNpciQ": {
+      "name": "Nutshell",
+      "artist": "Alice In Chains",
+      "art": "https://i.scdn.co/image/ab67616d00001e0225b42be683b8d3c6500db726",
+      "url": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "plays": 1,
+      "last": "2026-11-17T21:04:36.945Z"
+    },
+    "5Xak5fmy089t0FYmh3VJiY": {
+      "name": "Black",
+      "artist": "Pearl Jam",
+      "art": "https://i.scdn.co/image/ab67616d00001e022d0e5ab5bd2e234fbcffa3e0",
+      "url": "https://open.spotify.com/track/5Xak5fmy089t0FYmh3VJiY",
+      "plays": 1,
+      "last": "2026-11-17T21:10:20.069Z"
+    },
+    "5UWwZ5lm5PKu6eKsHAGxOk": {
+      "name": "Everlong",
+      "artist": "Foo Fighters",
+      "art": "https://i.scdn.co/image/ab67616d00001e024bc9bcdbdc9ac34e37d8b6bb",
+      "url": "https://open.spotify.com/track/5UWwZ5lm5PKu6eKsHAGxOk",
+      "plays": 1,
+      "last": "2026-11-17T21:15:57.245Z"
+    },
+    "00Mb3DuaIH1kjrwOku9CGU": {
+      "name": "Sk8er Boi",
+      "artist": "Avril Lavigne",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f7ec724fbf97a30869d06240",
+      "url": "https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU",
+      "plays": 1,
+      "last": "2026-11-17T21:19:21.738Z"
+    },
+    "6ORqU0bHbVCRjXm9AjyHyZ": {
+      "name": "Good Riddance (Time of Your Life)",
+      "artist": "Green Day",
+      "art": "https://i.scdn.co/image/ab67616d00001e02da4f6706ae0f2501c61ce776",
+      "url": "https://open.spotify.com/track/6ORqU0bHbVCRjXm9AjyHyZ",
+      "plays": 1,
+      "last": "2026-11-17T21:22:08.340Z"
+    },
+    "7mwZitiXFBqbWoa0C1wmRd": {
+      "name": "Crazy",
+      "artist": "Aerosmith",
+      "art": "https://i.scdn.co/image/ab67616d00001e02e6db341b141c438eb28fc3ab",
+      "url": "https://open.spotify.com/track/7mwZitiXFBqbWoa0C1wmRd",
+      "plays": 1,
+      "last": "2026-11-17T21:27:41.933Z"
+    },
+    "3gjHnylel3PTRpjS44ocqr": {
+      "name": "Zombie - 2025 Remastered",
+      "artist": "The Cranberries",
+      "art": "https://i.scdn.co/image/ab67616d00001e0220a28883cdd0fc7d5f85a9a9",
+      "url": "https://open.spotify.com/track/3gjHnylel3PTRpjS44ocqr",
+      "plays": 1,
+      "last": "2026-11-17T21:32:48.032Z"
+    },
+    "0UFDKFqW2oGspYeYqo9wjA": {
+      "name": "Bleed It Out",
+      "artist": "Linkin Park",
+      "art": "https://i.scdn.co/image/ab67616d00001e026e996745f2c7b8036abef213",
+      "url": "https://open.spotify.com/track/0UFDKFqW2oGspYeYqo9wjA",
+      "plays": 1,
+      "last": "2026-11-17T21:35:32.929Z"
+    },
+    "4bJygwUKrRgq1stlNXcgMg": {
+      "name": "All The Things She Said",
+      "artist": "t.A.T.u.",
+      "art": "https://i.scdn.co/image/ab67616d00001e023b27e1cd8a6bc6804c2e5fd2",
+      "url": "https://open.spotify.com/track/4bJygwUKrRgq1stlNXcgMg",
+      "plays": 1,
+      "last": "2026-11-17T21:39:07.863Z"
+    },
+    "63T7DJ1AFDD6Bn8VzG6JE8": {
+      "name": "Paint It, Black",
+      "artist": "The Rolling Stones",
+      "art": "https://i.scdn.co/image/ab67616d00001e02bad7062c3fd2f2d037989694",
+      "url": "https://open.spotify.com/track/63T7DJ1AFDD6Bn8VzG6JE8",
+      "plays": 1,
+      "last": "2026-11-17T21:42:30.624Z"
+    },
+    "3ZOEytgrvLwQaqXreDs2Jx": {
+      "name": "Can't Stop",
+      "artist": "Red Hot Chili Peppers",
+      "art": "https://i.scdn.co/image/ab67616d00001e02de1af2785a83cc660155a0c4",
+      "url": "https://open.spotify.com/track/3ZOEytgrvLwQaqXreDs2Jx",
+      "plays": 1,
+      "last": "2026-11-17T21:46:46.305Z"
+    },
+    "6HZ9VeI5IRFCNQLXhpF4bq": {
+      "name": "I Love It (feat. Charli XCX)",
+      "artist": "Icona Pop, Charli xcx",
+      "art": "https://i.scdn.co/image/ab67616d00001e0269d05d032251b59ae738096a",
+      "url": "https://open.spotify.com/track/6HZ9VeI5IRFCNQLXhpF4bq",
+      "plays": 1,
+      "last": "2026-11-17T21:57:49.187Z"
+    },
+    "4jbmgIyjGoXjY01XxatOx6": {
+      "name": "Dark Horse",
+      "artist": "Katy Perry, Juicy J",
+      "art": "https://i.scdn.co/image/ab67616d00001e021e9a057052d59004caf47e22",
+      "url": "https://open.spotify.com/track/4jbmgIyjGoXjY01XxatOx6",
+      "plays": 1,
+      "last": "2026-11-17T22:14:55.669Z"
+    },
+    "7vgTNTaEz3CsBZ1N4YQalM": {
+      "name": "Ghost Town",
+      "artist": "Kanye West, PARTYNEXTDOOR",
+      "art": "https://i.scdn.co/image/ab67616d00001e020cd942c1a864afa4e92d04f2",
+      "url": "https://open.spotify.com/track/7vgTNTaEz3CsBZ1N4YQalM",
+      "plays": 1,
+      "last": "2026-11-17T22:20:32.469Z"
+    },
+    "3jfZ9M23l0L7RxzYMTgBTv": {
+      "name": "Looking Out for You",
+      "artist": "Joy Again",
+      "art": "https://i.scdn.co/image/ab67616d00001e025448a3dfe8528453a3686fd6",
+      "url": "https://open.spotify.com/track/3jfZ9M23l0L7RxzYMTgBTv",
+      "plays": 1,
+      "last": "2026-11-17T22:24:58.269Z"
+    },
+    "5Z3GHaZ6ec9bsiI5BenrbY": {
+      "name": "Young Dumb & Broke",
+      "artist": "Khalid",
+      "art": "https://i.scdn.co/image/ab67616d00001e024ac041e0d889d3a2608210d5",
+      "url": "https://open.spotify.com/track/5Z3GHaZ6ec9bsiI5BenrbY",
+      "plays": 1,
+      "last": "2026-11-17T22:31:51.966Z"
+    },
+    "1f5cbQtDrykjarZVrShaDI": {
+      "name": "Drowning (feat. Kodak Black)",
+      "artist": "A Boogie Wit da Hoodie, Kodak Black",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cdba7ee22968991250725ce1",
+      "url": "https://open.spotify.com/track/1f5cbQtDrykjarZVrShaDI",
+      "plays": 2,
+      "last": "2026-11-18T02:38:31.019Z"
+    },
+    "6rjuKpPydT2SxN15TZpV7r": {
+      "name": "500lbs",
+      "artist": "Lil Tecca",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c4e6adea69105e6b6e214b96",
+      "url": "https://open.spotify.com/track/6rjuKpPydT2SxN15TZpV7r",
+      "plays": 1,
+      "last": "2026-11-18T02:40:55.962Z"
+    },
+    "40riOy7x9W7GXjyGp4pjAv": {
+      "name": "Hotel California - 2013 Remaster",
+      "artist": "Eagles",
+      "art": "https://i.scdn.co/image/ab67616d00001e024637341b9f507521afa9a778",
+      "url": "https://open.spotify.com/track/40riOy7x9W7GXjyGp4pjAv",
+      "plays": 1,
+      "last": "2026-11-18T02:47:27.817Z"
+    },
+    "3w3y8KPTfNeOKPiqUTakBh": {
+      "name": "Locked out of Heaven",
+      "artist": "Bruno Mars",
+      "art": "https://i.scdn.co/image/ab67616d00001e02926f43e7cce571e62720fd46",
+      "url": "https://open.spotify.com/track/3w3y8KPTfNeOKPiqUTakBh",
+      "plays": 1,
+      "last": "2026-11-18T02:51:21.716Z"
+    },
+    "2YpeDb67231RjR0MgVLzsG": {
+      "name": "Old Town Road (feat. Billy Ray Cyrus) - Remix",
+      "artist": "Lil Nas X, Billy Ray Cyrus",
+      "art": "https://i.scdn.co/image/ab67616d00001e026239187793c9e492e687db01",
+      "url": "https://open.spotify.com/track/2YpeDb67231RjR0MgVLzsG",
+      "plays": 1,
+      "last": "2026-11-18T02:54:05.501Z"
     }
   }
 }
