@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-18T04:01:13.132Z",
-  "updated": "2026-11-18T11:57:41.799Z",
+  "cursor": "2026-11-18T19:19:06.627Z",
+  "updated": "2026-11-18T20:44:01.909Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -682,6 +682,110 @@
       "url": "https://open.spotify.com/track/7AtBtwrKhz94hYXgGYyG58",
       "plays": 1,
       "last": "2026-11-18T04:01:13.132Z"
+    },
+    "7EiZI6JVHllARrX9PUvAdX": {
+      "name": "Low Life (feat. The Weeknd)",
+      "artist": "Future, The Weeknd",
+      "art": "https://i.scdn.co/image/ab67616d00001e022f62a05cc754995b544ec1f6",
+      "url": "https://open.spotify.com/track/7EiZI6JVHllARrX9PUvAdX",
+      "plays": 2,
+      "last": "2026-11-18T13:24:54.550Z"
+    },
+    "34oWbFBfGEElvgO0a5c9V4": {
+      "name": "No Flockin'",
+      "artist": "Kodak Black",
+      "art": "https://i.scdn.co/image/ab67616d00001e02aea8276630c907b6cd17fbc3",
+      "url": "https://open.spotify.com/track/34oWbFBfGEElvgO0a5c9V4",
+      "plays": 1,
+      "last": "2026-11-18T13:27:40.347Z"
+    },
+    "0EoJCSeuAq9Ilw2AesTBUu": {
+      "name": "Mad Man (feat. Playboi Carti)",
+      "artist": "A$AP Ferg, Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e027ff3f96423c97dba141c096e",
+      "url": "https://open.spotify.com/track/0EoJCSeuAq9Ilw2AesTBUu",
+      "plays": 1,
+      "last": "2026-11-18T16:46:51.992Z"
+    },
+    "7ijEnS2juTHSM7tD8byqrD": {
+      "name": "wedidit (with Playboi Carti)",
+      "artist": "Ken Carson, Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e0243e3d686c813bd4d020dd1ef",
+      "url": "https://open.spotify.com/track/7ijEnS2juTHSM7tD8byqrD",
+      "plays": 1,
+      "last": "2026-11-18T16:54:20.930Z"
+    },
+    "2hsLpxyXXzxfrmosKhGcEY": {
+      "name": "FREAK NEEK",
+      "artist": "Che",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f7f1e129b06640d7836c9a5c",
+      "url": "https://open.spotify.com/track/2hsLpxyXXzxfrmosKhGcEY",
+      "plays": 1,
+      "last": "2026-11-18T16:56:33.927Z"
+    },
+    "3F5CgOj3wFlRv51JsHbxhe": {
+      "name": "Jimmy Cooks (feat. 21 Savage)",
+      "artist": "Drake, 21 Savage",
+      "art": "https://i.scdn.co/image/ab67616d00001e028dc0d801766a5aa6a33cbe37",
+      "url": "https://open.spotify.com/track/3F5CgOj3wFlRv51JsHbxhe",
+      "plays": 1,
+      "last": "2026-11-18T17:00:12.623Z"
+    },
+    "0rBMP6VVGRgwnzZCLpijyl": {
+      "name": "Canal St. (feat. Bones)",
+      "artist": "A$AP Rocky, BONES",
+      "art": "https://i.scdn.co/image/ab67616d00001e0249efdc44d0733042f8b99d57",
+      "url": "https://open.spotify.com/track/0rBMP6VVGRgwnzZCLpijyl",
+      "plays": 1,
+      "last": "2026-11-18T17:04:00.621Z"
+    },
+    "7IMqyfNSnAX1yaQGH5mAh3": {
+      "name": "Walk The Walk",
+      "artist": "Stay Focused Frank, Yuno Miles, Nezlo, Jaysstra",
+      "art": "https://i.scdn.co/image/ab67616d00001e02ce4e3cb3e33bac86df7a47ac",
+      "url": "https://open.spotify.com/track/7IMqyfNSnAX1yaQGH5mAh3",
+      "plays": 1,
+      "last": "2026-11-18T17:06:15.318Z"
+    },
+    "6Ozh9Ok6h4Oi1wUSLtBseN": {
+      "name": "BOP",
+      "artist": "DaBaby",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f2b94b2fda4f08836d6371ba",
+      "url": "https://open.spotify.com/track/6Ozh9Ok6h4Oi1wUSLtBseN",
+      "plays": 1,
+      "last": "2026-11-18T17:08:55.519Z"
+    },
+    "2UVbBKQOdFAekPTRsnkzcf": {
+      "name": "Stir Fry",
+      "artist": "Migos",
+      "art": "https://i.scdn.co/image/ab67616d00001e029c188c494d8bfaf895411890",
+      "url": "https://open.spotify.com/track/2UVbBKQOdFAekPTRsnkzcf",
+      "plays": 2,
+      "last": "2026-11-18T18:43:45.156Z"
+    },
+    "7HcGqTORHDBsoC3HX6u83t": {
+      "name": "Ghoul",
+      "artist": "Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e0253b16cd45ce027fc7b65f9e8",
+      "url": "https://open.spotify.com/track/7HcGqTORHDBsoC3HX6u83t",
+      "plays": 1,
+      "last": "2026-11-18T19:06:14.504Z"
+    },
+    "15og0pCEcTFWEXOFKdcJlU": {
+      "name": "Hate Me",
+      "artist": "Ellie Goulding, Juice WRLD",
+      "art": "https://i.scdn.co/image/ab67616d00001e02156d79bdb60fc5f7af75590b",
+      "url": "https://open.spotify.com/track/15og0pCEcTFWEXOFKdcJlU",
+      "plays": 2,
+      "last": "2026-11-18T19:18:32.541Z"
+    },
+    "4v2r3H6YEQIlxS4Z1njwoe": {
+      "name": "Trunks (From \"Highest 2 Lowest\")",
+      "artist": "A$AP Rocky",
+      "art": "https://i.scdn.co/image/ab67616d00001e021ce167f6161a79810f55c2d9",
+      "url": "https://open.spotify.com/track/4v2r3H6YEQIlxS4Z1njwoe",
+      "plays": 1,
+      "last": "2026-11-18T19:19:06.627Z"
     }
   }
 }
