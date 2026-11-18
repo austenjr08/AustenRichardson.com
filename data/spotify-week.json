@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-18T02:54:05.501Z",
-  "updated": "2026-11-18T02:57:59.508Z",
+  "cursor": "2026-11-18T04:01:13.132Z",
+  "updated": "2026-11-18T11:57:41.799Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -586,6 +586,102 @@
       "url": "https://open.spotify.com/track/2YpeDb67231RjR0MgVLzsG",
       "plays": 1,
       "last": "2026-11-18T02:54:05.501Z"
+    },
+    "70C4NyhjD5OZUMzvWZ3njJ": {
+      "name": "Piano Man",
+      "artist": "Billy Joel",
+      "art": "https://i.scdn.co/image/ab67616d00001e02aff4aef671b2510be7c115b3",
+      "url": "https://open.spotify.com/track/70C4NyhjD5OZUMzvWZ3njJ",
+      "plays": 1,
+      "last": "2026-11-18T02:59:45.011Z"
+    },
+    "5hVghJ4KaYES3BFUATCYn0": {
+      "name": "EARFQUAKE",
+      "artist": "Tyler, The Creator",
+      "art": "https://i.scdn.co/image/ab67616d00001e0230a635de2bb0caa4e26f6abb",
+      "url": "https://open.spotify.com/track/5hVghJ4KaYES3BFUATCYn0",
+      "plays": 1,
+      "last": "2026-11-18T03:15:53.613Z"
+    },
+    "5hnyJvgoWiQUYZttV4wXy6": {
+      "name": "Chasing Cars",
+      "artist": "Snow Patrol",
+      "art": "https://i.scdn.co/image/ab67616d00001e025da2756220da9b6f17924f8f",
+      "url": "https://open.spotify.com/track/5hnyJvgoWiQUYZttV4wXy6",
+      "plays": 1,
+      "last": "2026-11-18T03:20:22.051Z"
+    },
+    "2mNGL7mZILSqZHxGboJaO9": {
+      "name": "COMË N GO",
+      "artist": "Yeat",
+      "art": "https://i.scdn.co/image/ab67616d00001e02d581e4b339c05d37a96be5ea",
+      "url": "https://open.spotify.com/track/2mNGL7mZILSqZHxGboJaO9",
+      "plays": 1,
+      "last": "2026-11-18T03:23:41.246Z"
+    },
+    "2VOZniNxFIDl8ydLltrMNb": {
+      "name": "Escapism.",
+      "artist": "RAYE, 070 Shake",
+      "art": "https://i.scdn.co/image/ab67616d00001e02e38f6d02f1e76fe09009e64e",
+      "url": "https://open.spotify.com/track/2VOZniNxFIDl8ydLltrMNb",
+      "plays": 1,
+      "last": "2026-11-18T03:32:53.997Z"
+    },
+    "1UAmQe8EwpxQ80OfYVD13z": {
+      "name": "Lookin",
+      "artist": "Playboi Carti, Lil Uzi Vert",
+      "art": "https://i.scdn.co/image/ab67616d00001e02e31a279d267f3b3d8912e6f1",
+      "url": "https://open.spotify.com/track/1UAmQe8EwpxQ80OfYVD13z",
+      "plays": 1,
+      "last": "2026-11-18T03:35:58.096Z"
+    },
+    "2Hh3ETdQKrmSI3QS0hme7g": {
+      "name": "Too Many Nights (feat. Don Toliver & with Future)",
+      "artist": "Metro Boomin, Future, Don Toliver",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c4fee55d7b51479627c31f89",
+      "url": "https://open.spotify.com/track/2Hh3ETdQKrmSI3QS0hme7g",
+      "plays": 1,
+      "last": "2026-11-18T03:39:18.695Z"
+    },
+    "4QYEtbfsqusrXN5A49LG53": {
+      "name": "Six Feet Under",
+      "artist": "The Weeknd",
+      "art": "https://i.scdn.co/image/ab67616d00001e028ad8f5243d6534e03b656c8b",
+      "url": "https://open.spotify.com/track/4QYEtbfsqusrXN5A49LG53",
+      "plays": 1,
+      "last": "2026-11-18T03:43:16.892Z"
+    },
+    "3iEUDvanZwQhLCIqUmCR7N": {
+      "name": "The Spins",
+      "artist": "Mac Miller, Empire Of The Sun",
+      "art": "https://i.scdn.co/image/ab67616d00001e027414c28a11a87cbfd91dce10",
+      "url": "https://open.spotify.com/track/3iEUDvanZwQhLCIqUmCR7N",
+      "plays": 1,
+      "last": "2026-11-18T03:46:33.191Z"
+    },
+    "3zakx7RAwdkUQlOoQ7SJRt": {
+      "name": "GRAVITY (FEAT. TYLER, THE CREATOR)",
+      "artist": "Brent Faiyaz, Dahi, Tyler, The Creator",
+      "art": "https://i.scdn.co/image/ab67616d00001e0269f63a842ea91ca7c522593a",
+      "url": "https://open.spotify.com/track/3zakx7RAwdkUQlOoQ7SJRt",
+      "plays": 1,
+      "last": "2026-11-18T03:50:08.373Z"
+    },
+    "3s7MCdXyWmwjdcWh7GWXas": {
+      "name": "Violent Crimes",
+      "artist": "Kanye West",
+      "art": "https://i.scdn.co/image/ab67616d00001e020cd942c1a864afa4e92d04f2",
+      "url": "https://open.spotify.com/track/3s7MCdXyWmwjdcWh7GWXas",
+      "plays": 1,
+      "last": "2026-11-18T03:58:29.053Z"
+    },
+    "7AtBtwrKhz94hYXgGYyG58": {
+      "name": "Middle Of The Summer (feat. Red Coldhearted)",
+      "artist": "Playboi Carti, Red Coldhearted",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a1e867d40e7bb29ced5c0194",
+      "url": "https://open.spotify.com/track/7AtBtwrKhz94hYXgGYyG58",
+      "plays": 1,
+      "last": "2026-11-18T04:01:13.132Z"
     }
   }
 }
