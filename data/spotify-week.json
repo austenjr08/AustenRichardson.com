@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-19T01:04:53.909Z",
-  "updated": "2026-11-19T02:40:34.587Z",
+  "cursor": "2026-11-19T05:48:37.544Z",
+  "updated": "2026-11-19T11:55:23.996Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -914,6 +914,14 @@
       "url": "https://open.spotify.com/track/2jvNQSIZ6TEV9U1ZXlrXGo",
       "plays": 1,
       "last": "2026-11-19T01:04:53.909Z"
+    },
+    "45TB2WNxWu2X4MmqmCAJnF": {
+      "name": "That's It (feat. Future & Metro Boomin) [from GTAVI: The Album]",
+      "artist": "Yung Lean, Grand Theft Auto VI, Metro Boomin, Future",
+      "art": "https://i.scdn.co/image/ab67616d00001e02de752003a9ecac9591447585",
+      "url": "https://open.spotify.com/track/45TB2WNxWu2X4MmqmCAJnF",
+      "plays": 1,
+      "last": "2026-11-19T05:48:37.544Z"
     }
   }
 }
