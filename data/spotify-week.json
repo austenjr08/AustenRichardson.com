@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-18T19:19:06.627Z",
-  "updated": "2026-11-18T20:44:01.909Z",
+  "cursor": "2026-11-19T01:04:53.909Z",
+  "updated": "2026-11-19T02:40:34.587Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -48,8 +48,8 @@
       "artist": "Future",
       "art": "https://i.scdn.co/image/ab67616d00001e02c1a4bee8f56f093ba31e9fd2",
       "url": "https://open.spotify.com/track/2ML7vSeIZEmOCOiLUmz7Sv",
-      "plays": 1,
-      "last": "2026-11-16T19:20:54.231Z"
+      "plays": 2,
+      "last": "2026-11-18T20:36:45.313Z"
     },
     "5wNIHa6wvCCKP6fWgo3UAh": {
       "name": "CHAMPAIN & VACAY",
@@ -104,8 +104,8 @@
       "artist": "MA Beats, BXCO!",
       "art": "https://i.scdn.co/image/ab67616d00001e02db5c7eb8e11c4337a34268f5",
       "url": "https://open.spotify.com/track/3HmrwEz8bzNnlFFPoRbabB",
-      "plays": 1,
-      "last": "2026-11-16T20:04:27.692Z"
+      "plays": 2,
+      "last": "2026-11-18T21:28:58.177Z"
     },
     "0cgD36xPIJBdKUNJRHYDgP": {
       "name": "JumpOutTheHouse",
@@ -786,6 +786,134 @@
       "url": "https://open.spotify.com/track/4v2r3H6YEQIlxS4Z1njwoe",
       "plays": 1,
       "last": "2026-11-18T19:19:06.627Z"
+    },
+    "7eqoqGkKwgOaWNNHx90uEZ": {
+      "name": "Nights",
+      "artist": "Frank Ocean",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+      "url": "https://open.spotify.com/track/7eqoqGkKwgOaWNNHx90uEZ",
+      "plays": 2,
+      "last": "2026-11-18T20:27:21.216Z"
+    },
+    "2FTeQQ5Rg9tBpgpTF5mnhE": {
+      "name": "Still Think About You",
+      "artist": "A Boogie Wit da Hoodie",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f2baf6d743ae26f97777f026",
+      "url": "https://open.spotify.com/track/2FTeQQ5Rg9tBpgpTF5mnhE",
+      "plays": 1,
+      "last": "2026-11-18T20:31:28.714Z"
+    },
+    "0iBV6djrudVllSHVTSAJbB": {
+      "name": "RIP",
+      "artist": "LUCKI",
+      "art": "https://i.scdn.co/image/ab67616d00001e0219ff025a0574f759db86d3d2",
+      "url": "https://open.spotify.com/track/0iBV6djrudVllSHVTSAJbB",
+      "plays": 1,
+      "last": "2026-11-18T20:38:49.212Z"
+    },
+    "08dz3ygXyFur6bL7Au8u8J": {
+      "name": "Over",
+      "artist": "Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e0298ea0e689c91f8fea726d9bb",
+      "url": "https://open.spotify.com/track/08dz3ygXyFur6bL7Au8u8J",
+      "plays": 1,
+      "last": "2026-11-18T20:41:36.008Z"
+    },
+    "5oady7OSE7dH7LHiqmb3Cr": {
+      "name": "Dreams, Fairytales, Fantasies (feat. Brent Faiyaz & Salaam Remi)",
+      "artist": "A$AP Ferg, Brent Faiyaz, Salaam Remi",
+      "art": "https://i.scdn.co/image/ab67616d00001e021be99f274f2046dcb080a20f",
+      "url": "https://open.spotify.com/track/5oady7OSE7dH7LHiqmb3Cr",
+      "plays": 1,
+      "last": "2026-11-18T20:45:19.442Z"
+    },
+    "3jnYCrF7UpSYAwwy1URW8d": {
+      "name": "I Smoked Away My Brain (I'm God x Demons Mashup) (feat. Imogen Heap & Clams Casino)",
+      "artist": "A$AP Rocky, Imogen Heap, Clams Casino",
+      "art": "https://i.scdn.co/image/ab67616d00001e0227b7133c976e8ae6c3add683",
+      "url": "https://open.spotify.com/track/3jnYCrF7UpSYAwwy1URW8d",
+      "plays": 1,
+      "last": "2026-11-18T20:48:30.709Z"
+    },
+    "2eAZfqOm4EnOF9VvN50Tyc": {
+      "name": "The Way Life Goes (feat. Oh Wonder)",
+      "artist": "Lil Uzi Vert, Oh Wonder",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f23aee9d3be9fcbca1bc6352",
+      "url": "https://open.spotify.com/track/2eAZfqOm4EnOF9VvN50Tyc",
+      "plays": 1,
+      "last": "2026-11-18T20:52:12.906Z"
+    },
+    "3lIHa4fUwNKOCSS5k3Za0i": {
+      "name": "nothing",
+      "artist": "Steve Lacy",
+      "art": "https://i.scdn.co/image/ab67616d00001e024ea9ba86cd9506a004bab042",
+      "url": "https://open.spotify.com/track/3lIHa4fUwNKOCSS5k3Za0i",
+      "plays": 1,
+      "last": "2026-11-18T20:54:43.101Z"
+    },
+    "7DfFc7a6Rwfi3YQMRbDMau": {
+      "name": "Thinkin Bout You",
+      "artist": "Frank Ocean",
+      "art": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+      "url": "https://open.spotify.com/track/7DfFc7a6Rwfi3YQMRbDMau",
+      "plays": 1,
+      "last": "2026-11-18T21:00:03.073Z"
+    },
+    "18gsghtuAqdYVqeNhhFxG6": {
+      "name": "Answer Me",
+      "artist": "Nine Vicious Vault",
+      "art": "https://i.scdn.co/image/ab67616d00001e0202f4bc52e6392456b8131b6b",
+      "url": "https://open.spotify.com/track/18gsghtuAqdYVqeNhhFxG6",
+      "plays": 1,
+      "last": "2026-11-18T21:07:58.545Z"
+    },
+    "0qy5D3OJre7SPJNMOL9I71": {
+      "name": "Broccoli",
+      "artist": "DRAM, Lil Yachty",
+      "art": "https://i.scdn.co/image/ab67616d00001e02fdeac207b7369d188cb2221c",
+      "url": "https://open.spotify.com/track/0qy5D3OJre7SPJNMOL9I71",
+      "plays": 1,
+      "last": "2026-11-18T21:13:14.986Z"
+    },
+    "69kOkLUCkxIZYexIgSG8rq": {
+      "name": "Get Lucky (feat. Pharrell Williams and Nile Rodgers)",
+      "artist": "Daft Punk, Pharrell Williams, Nile Rodgers",
+      "art": "https://i.scdn.co/image/ab67616d00001e029b9b36b0e22870b9f542d937",
+      "url": "https://open.spotify.com/track/69kOkLUCkxIZYexIgSG8rq",
+      "plays": 1,
+      "last": "2026-11-18T21:19:25.164Z"
+    },
+    "4tqcoej1zPvwePZCzuAjJd": {
+      "name": "Wet Dreamz",
+      "artist": "J. Cole",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c6e0948bbb0681ff29cdbae8",
+      "url": "https://open.spotify.com/track/4tqcoej1zPvwePZCzuAjJd",
+      "plays": 1,
+      "last": "2026-11-18T23:33:22.937Z"
+    },
+    "6gBFPUFcJLzWGx4lenP6h2": {
+      "name": "goosebumps",
+      "artist": "Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e028752a7355996e64709247c53",
+      "url": "https://open.spotify.com/track/6gBFPUFcJLzWGx4lenP6h2",
+      "plays": 1,
+      "last": "2026-11-18T23:46:08.162Z"
+    },
+    "1NUSXgqkenc0sP7idI2s8g": {
+      "name": "WAIT FOR U (feat. Drake & Tems)",
+      "artist": "Future, Drake, Tems",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c3886b1f21a75622d47c2031",
+      "url": "https://open.spotify.com/track/1NUSXgqkenc0sP7idI2s8g",
+      "plays": 1,
+      "last": "2026-11-19T01:02:57.450Z"
+    },
+    "2jvNQSIZ6TEV9U1ZXlrXGo": {
+      "name": "Tales Of The Toxic",
+      "artist": "Mausii X",
+      "art": "https://i.scdn.co/image/ab67616d00001e0229aa11c8f7fcb5e67b4fef7f",
+      "url": "https://open.spotify.com/track/2jvNQSIZ6TEV9U1ZXlrXGo",
+      "plays": 1,
+      "last": "2026-11-19T01:04:53.909Z"
     }
   }
 }
