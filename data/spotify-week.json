@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-20T05:25:24.949Z",
-  "updated": "2026-11-20T11:56:28.628Z",
+  "cursor": "2026-11-20T18:38:27.536Z",
+  "updated": "2026-11-20T20:34:13.020Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -1034,6 +1034,14 @@
       "url": "https://open.spotify.com/track/1rfofaqEpACxVEHIZBJe6W",
       "plays": 1,
       "last": "2026-11-20T05:25:24.949Z"
+    },
+    "5tLZfwzwK8KxoBsNwbNFDI": {
+      "name": "AHH YEA",
+      "artist": "Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e027f62c9c136c0ab9ef78f2d15",
+      "url": "https://open.spotify.com/track/5tLZfwzwK8KxoBsNwbNFDI",
+      "plays": 1,
+      "last": "2026-11-20T18:38:27.536Z"
     }
   }
 }
