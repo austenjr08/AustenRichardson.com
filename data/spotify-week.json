@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-19T05:48:37.544Z",
-  "updated": "2026-11-19T11:55:23.996Z",
+  "cursor": "2026-11-20T01:20:29.323Z",
+  "updated": "2026-11-20T02:26:02.015Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -922,6 +922,22 @@
       "url": "https://open.spotify.com/track/45TB2WNxWu2X4MmqmCAJnF",
       "plays": 1,
       "last": "2026-11-19T05:48:37.544Z"
+    },
+    "1BpKJw4RZxaFB88NE5uxXf": {
+      "name": "ILoveUIHateU",
+      "artist": "Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e0298ea0e689c91f8fea726d9bb",
+      "url": "https://open.spotify.com/track/1BpKJw4RZxaFB88NE5uxXf",
+      "plays": 1,
+      "last": "2026-11-20T01:17:52.923Z"
+    },
+    "2BJSMvOGABRxokHKB0OI8i": {
+      "name": "Shoota (feat. Lil Uzi Vert)",
+      "artist": "Playboi Carti, Lil Uzi Vert",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a1e867d40e7bb29ced5c0194",
+      "url": "https://open.spotify.com/track/2BJSMvOGABRxokHKB0OI8i",
+      "plays": 1,
+      "last": "2026-11-20T01:20:29.323Z"
     }
   }
 }
