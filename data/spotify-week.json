@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-20T01:20:29.323Z",
-  "updated": "2026-11-20T02:26:02.015Z",
+  "cursor": "2026-11-20T05:25:24.949Z",
+  "updated": "2026-11-20T11:56:28.628Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -232,8 +232,8 @@
       "artist": "David Guetta, Kid Cudi",
       "art": "https://i.scdn.co/image/ab67616d00001e02b2e43ed3850e072831f7b2c6",
       "url": "https://open.spotify.com/track/4dTaAiV9xFFCxnPur9c9yL",
-      "plays": 1,
-      "last": "2026-11-17T03:05:20.813Z"
+      "plays": 4,
+      "last": "2026-11-20T03:04:55.036Z"
     },
     "6jbYpRPTEFl1HFKHk1IC0m": {
       "name": "Like Him (feat. Lola Young)",
@@ -384,8 +384,8 @@
       "artist": "Ellie Goulding, Diplo, Swae Lee",
       "art": "https://i.scdn.co/image/ab67616d00001e02dd640dbca55836e23894212a",
       "url": "https://open.spotify.com/track/5JEx7HbmvHQQswJCsoo9rA",
-      "plays": 1,
-      "last": "2026-11-17T20:26:54.597Z"
+      "plays": 3,
+      "last": "2026-11-20T05:01:37.791Z"
     },
     "4R5bSS8yoCl2czeWLr61aO": {
       "name": "Diamonds From Sierra Leone - Bonus Track",
@@ -938,6 +938,102 @@
       "url": "https://open.spotify.com/track/2BJSMvOGABRxokHKB0OI8i",
       "plays": 1,
       "last": "2026-11-20T01:20:29.323Z"
+    },
+    "1s9DTymg5UQrdorZf43JQm": {
+      "name": "Fell In Luv (feat. Bryson Tiller)",
+      "artist": "Playboi Carti, Bryson Tiller",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a1e867d40e7bb29ced5c0194",
+      "url": "https://open.spotify.com/track/1s9DTymg5UQrdorZf43JQm",
+      "plays": 1,
+      "last": "2026-11-20T01:21:33.754Z"
+    },
+    "20fAoPjfYltmd3K3bO7gbt": {
+      "name": "Stick Talk",
+      "artist": "Future",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b2592bea12d840fd096ef965",
+      "url": "https://open.spotify.com/track/20fAoPjfYltmd3K3bO7gbt",
+      "plays": 1,
+      "last": "2026-11-20T02:53:01.068Z"
+    },
+    "3P5mHpWlBKCJUVYz9QvOAd": {
+      "name": "Naked",
+      "artist": "Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e0253b16cd45ce027fc7b65f9e8",
+      "url": "https://open.spotify.com/track/3P5mHpWlBKCJUVYz9QvOAd",
+      "plays": 1,
+      "last": "2026-11-20T03:08:33.715Z"
+    },
+    "7tcOUGvkj9VpxyJjKJ5HQJ": {
+      "name": "Unstoppable (feat. Che)",
+      "artist": "Molly Santana, Che",
+      "art": "https://i.scdn.co/image/ab67616d00001e029035f62d70eda9d2095c8cff",
+      "url": "https://open.spotify.com/track/7tcOUGvkj9VpxyJjKJ5HQJ",
+      "plays": 1,
+      "last": "2026-11-20T03:16:18.036Z"
+    },
+    "24Zk2fFNpyNkmUdB6Eezgm": {
+      "name": "Tenene",
+      "artist": "Colin Benders",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b8a19a28028e633f70c158c7",
+      "url": "https://open.spotify.com/track/24Zk2fFNpyNkmUdB6Eezgm",
+      "plays": 1,
+      "last": "2026-11-20T04:38:21.527Z"
+    },
+    "6jRq8gaZhMUyy5RclRPcAf": {
+      "name": "hot girl bummer",
+      "artist": "blackbear",
+      "art": "https://i.scdn.co/image/ab67616d00001e02e9b6f26ff354f4d70847f02d",
+      "url": "https://open.spotify.com/track/6jRq8gaZhMUyy5RclRPcAf",
+      "plays": 1,
+      "last": "2026-11-20T05:04:46.709Z"
+    },
+    "5H4mXWKcicuLKDn4Jy0sK7": {
+      "name": "Time Flies",
+      "artist": "Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e02bba7cfaf7c59ff0898acba1f",
+      "url": "https://open.spotify.com/track/5H4mXWKcicuLKDn4Jy0sK7",
+      "plays": 1,
+      "last": "2026-11-20T05:08:00.142Z"
+    },
+    "51EC3I1nQXpec4gDk0mQyP": {
+      "name": "90210 (feat. Kacy Hill)",
+      "artist": "Travis Scott, Kacy Hill",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f8000675abb4d2d1f4543fc4",
+      "url": "https://open.spotify.com/track/51EC3I1nQXpec4gDk0mQyP",
+      "plays": 1,
+      "last": "2026-11-20T05:13:39.658Z"
+    },
+    "5iSEsR6NKjlC9SrIJkyL3k": {
+      "name": "Pursuit Of Happiness (Nightmare)",
+      "artist": "Kid Cudi, MGMT, Ratatat",
+      "art": "https://i.scdn.co/image/ab67616d00001e02aab2c3c3f1f3207137d915c9",
+      "url": "https://open.spotify.com/track/5iSEsR6NKjlC9SrIJkyL3k",
+      "plays": 1,
+      "last": "2026-11-20T05:18:35.537Z"
+    },
+    "2xB46Bj9HZ4cr058yN4Pla": {
+      "name": "Secrets",
+      "artist": "A Boogie Wit da Hoodie",
+      "art": "https://i.scdn.co/image/ab67616d00001e02d148290875628f92fd2f9fa9",
+      "url": "https://open.spotify.com/track/2xB46Bj9HZ4cr058yN4Pla",
+      "plays": 1,
+      "last": "2026-11-20T05:20:49.201Z"
+    },
+    "11pEKMLmavDu8fxOB5QjbQ": {
+      "name": "Pipe Down",
+      "artist": "Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f",
+      "url": "https://open.spotify.com/track/11pEKMLmavDu8fxOB5QjbQ",
+      "plays": 1,
+      "last": "2026-11-20T05:24:15.501Z"
+    },
+    "1rfofaqEpACxVEHIZBJe6W": {
+      "name": "Havana (feat. Young Thug)",
+      "artist": "Camila Cabello, Young Thug",
+      "art": "https://i.scdn.co/image/ab67616d00001e02652c9f55dfbf3cfe1800daea",
+      "url": "https://open.spotify.com/track/1rfofaqEpACxVEHIZBJe6W",
+      "plays": 1,
+      "last": "2026-11-20T05:25:24.949Z"
     }
   }
 }
