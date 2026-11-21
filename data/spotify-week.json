@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-20T18:38:27.536Z",
-  "updated": "2026-11-20T20:34:13.020Z",
+  "cursor": "2026-11-21T01:35:16.239Z",
+  "updated": "2026-11-21T02:34:02.117Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -48,8 +48,8 @@
       "artist": "Future",
       "art": "https://i.scdn.co/image/ab67616d00001e02c1a4bee8f56f093ba31e9fd2",
       "url": "https://open.spotify.com/track/2ML7vSeIZEmOCOiLUmz7Sv",
-      "plays": 2,
-      "last": "2026-11-18T20:36:45.313Z"
+      "plays": 3,
+      "last": "2026-11-21T01:30:02.268Z"
     },
     "5wNIHa6wvCCKP6fWgo3UAh": {
       "name": "CHAMPAIN & VACAY",
@@ -688,8 +688,8 @@
       "artist": "Future, The Weeknd",
       "art": "https://i.scdn.co/image/ab67616d00001e022f62a05cc754995b544ec1f6",
       "url": "https://open.spotify.com/track/7EiZI6JVHllARrX9PUvAdX",
-      "plays": 2,
-      "last": "2026-11-18T13:24:54.550Z"
+      "plays": 3,
+      "last": "2026-11-21T01:35:16.239Z"
     },
     "34oWbFBfGEElvgO0a5c9V4": {
       "name": "No Flockin'",
@@ -1040,8 +1040,16 @@
       "artist": "Playboi Carti",
       "art": "https://i.scdn.co/image/ab67616d00001e027f62c9c136c0ab9ef78f2d15",
       "url": "https://open.spotify.com/track/5tLZfwzwK8KxoBsNwbNFDI",
+      "plays": 2,
+      "last": "2026-11-21T01:20:00.436Z"
+    },
+    "3Ol2xnObFdKV9pmRD2t9x8": {
+      "name": "Look Back at It",
+      "artist": "A Boogie Wit da Hoodie",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a5c7151899ae5da4f4382d54",
+      "url": "https://open.spotify.com/track/3Ol2xnObFdKV9pmRD2t9x8",
       "plays": 1,
-      "last": "2026-11-20T18:38:27.536Z"
+      "last": "2026-11-21T01:24:15.960Z"
     }
   }
 }
