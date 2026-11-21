@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-15T05:00:00.000Z",
-  "cursor": "2026-11-21T01:35:16.239Z",
-  "updated": "2026-11-21T02:34:02.117Z",
+  "cursor": "2026-11-21T05:22:48.336Z",
+  "updated": "2026-11-21T11:27:23.899Z",
   "tracks": {
     "5NAOhPAZ57eFAXr3qatS6i": {
       "name": "Breathe",
@@ -208,8 +208,8 @@
       "artist": "Mac Miller, Ty Dolla $ign",
       "art": "https://i.scdn.co/image/ab67616d00001e022e92f776279eaf45d14a33fd",
       "url": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
-      "plays": 1,
-      "last": "2026-11-17T01:33:51.251Z"
+      "plays": 2,
+      "last": "2026-11-21T01:37:24.302Z"
     },
     "6wQlQrTY5mVS8EGaFZVwVF": {
       "name": "Smile (with The Weeknd)",
@@ -1050,6 +1050,30 @@
       "url": "https://open.spotify.com/track/3Ol2xnObFdKV9pmRD2t9x8",
       "plays": 1,
       "last": "2026-11-21T01:24:15.960Z"
+    },
+    "6NMtzpDQBTOfJwMzgMX0zl": {
+      "name": "SKELETONS",
+      "artist": "Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e02daec894c14c0ca42d76eeb32",
+      "url": "https://open.spotify.com/track/6NMtzpDQBTOfJwMzgMX0zl",
+      "plays": 1,
+      "last": "2026-11-21T05:06:45.005Z"
+    },
+    "6pcywuOeGGWeOQzdUyti6k": {
+      "name": "Glock In My Lap",
+      "artist": "21 Savage, Metro Boomin",
+      "art": "https://i.scdn.co/image/ab67616d00001e026a7e6ceda5e779fbb6ec1ba8",
+      "url": "https://open.spotify.com/track/6pcywuOeGGWeOQzdUyti6k",
+      "plays": 1,
+      "last": "2026-11-21T05:09:59.107Z"
+    },
+    "1h6kgem1ai8vUgO1rZOwfB": {
+      "name": "I Don't Like",
+      "artist": "Chief Keef, Lil Reese",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a76616abf60ce17491e95891",
+      "url": "https://open.spotify.com/track/1h6kgem1ai8vUgO1rZOwfB",
+      "plays": 1,
+      "last": "2026-11-21T05:22:48.336Z"
     }
   }
 }
