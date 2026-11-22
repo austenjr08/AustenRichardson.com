@@ -1,6 +1,31 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-21T05:22:48.336Z",
-  "updated": "2026-11-22T08:14:21.692Z",
-  "tracks": {}
+  "cursor": "2026-11-22T19:17:26.408Z",
+  "updated": "2026-11-22T22:35:42.859Z",
+  "tracks": {
+    "34tz0eDhGuFErIuW3q4mPX": {
+      "name": "On BS",
+      "artist": "Drake, 21 Savage",
+      "art": "https://i.scdn.co/image/ab67616d00001e0202854a7060fccc1a66a4b5ad",
+      "url": "https://open.spotify.com/track/34tz0eDhGuFErIuW3q4mPX",
+      "plays": 1,
+      "last": "2026-11-22T19:14:01.888Z"
+    },
+    "1sPt5aSjhjwpzP2jEPwDCK": {
+      "name": "fuk 12",
+      "artist": "bleood",
+      "art": "https://i.scdn.co/image/ab67616d00001e025e9ec5f3bd65f251d2a87eeb",
+      "url": "https://open.spotify.com/track/1sPt5aSjhjwpzP2jEPwDCK",
+      "plays": 1,
+      "last": "2026-11-22T19:16:13.343Z"
+    },
+    "4OjuzM3rTWp3q60mEldNSF": {
+      "name": "Hit the Quan - Original Version",
+      "artist": "iLoveMemphis",
+      "art": "https://i.scdn.co/image/ab67616d00001e02d6e386bcbf4d73ce49364511",
+      "url": "https://open.spotify.com/track/4OjuzM3rTWp3q60mEldNSF",
+      "plays": 1,
+      "last": "2026-11-22T19:17:26.408Z"
+    }
+  }
 }
