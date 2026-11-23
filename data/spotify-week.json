@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-22T19:17:26.408Z",
-  "updated": "2026-11-22T22:35:42.859Z",
+  "cursor": "2026-11-23T02:54:30.322Z",
+  "updated": "2026-11-23T03:48:42.436Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -26,6 +26,38 @@
       "url": "https://open.spotify.com/track/4OjuzM3rTWp3q60mEldNSF",
       "plays": 1,
       "last": "2026-11-22T19:17:26.408Z"
+    },
+    "3VqHuw0wFlIHcIPWkhIbdQ": {
+      "name": "Enter Sandman (Remastered)",
+      "artist": "Metallica",
+      "art": "https://i.scdn.co/image/ab67616d00001e021f9edf15e43f4c2f4938b869",
+      "url": "https://open.spotify.com/track/3VqHuw0wFlIHcIPWkhIbdQ",
+      "plays": 1,
+      "last": "2026-11-23T02:14:15.164Z"
+    },
+    "2ML7vSeIZEmOCOiLUmz7Sv": {
+      "name": "Throw Away",
+      "artist": "Future",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c1a4bee8f56f093ba31e9fd2",
+      "url": "https://open.spotify.com/track/2ML7vSeIZEmOCOiLUmz7Sv",
+      "plays": 1,
+      "last": "2026-11-23T02:38:30.718Z"
+    },
+    "6dmueYtoihUhlQZlImBCmm": {
+      "name": "Creep - 2017 Remaster",
+      "artist": "Stone Temple Pilots",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b8bc0f023ff7a1c6663f28ec",
+      "url": "https://open.spotify.com/track/6dmueYtoihUhlQZlImBCmm",
+      "plays": 1,
+      "last": "2026-11-23T02:47:17.644Z"
+    },
+    "600s08VdbjiyAjDGDjYSFI": {
+      "name": "Interstate Love Song",
+      "artist": "Stone Temple Pilots",
+      "art": "https://i.scdn.co/image/ab67616d00001e0277696910e15c42a5e37636e5",
+      "url": "https://open.spotify.com/track/600s08VdbjiyAjDGDjYSFI",
+      "plays": 2,
+      "last": "2026-11-23T02:54:30.322Z"
     }
   }
 }
