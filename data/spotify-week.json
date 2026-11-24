@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-23T02:54:30.322Z",
-  "updated": "2026-11-23T03:48:42.436Z",
+  "cursor": "2026-11-24T02:04:20.918Z",
+  "updated": "2026-11-24T02:23:17.739Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -58,6 +58,126 @@
       "url": "https://open.spotify.com/track/600s08VdbjiyAjDGDjYSFI",
       "plays": 2,
       "last": "2026-11-23T02:54:30.322Z"
+    },
+    "5tLZfwzwK8KxoBsNwbNFDI": {
+      "name": "AHH YEA",
+      "artist": "Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e027f62c9c136c0ab9ef78f2d15",
+      "url": "https://open.spotify.com/track/5tLZfwzwK8KxoBsNwbNFDI",
+      "plays": 1,
+      "last": "2026-11-23T19:00:18.131Z"
+    },
+    "6s3fRCeYOdwKDCrC9jI9wT": {
+      "name": "Lady Killers II",
+      "artist": "G-Eazy",
+      "art": "https://i.scdn.co/image/ab67616d00001e02fd6e05ae985e95d27e4802c8",
+      "url": "https://open.spotify.com/track/6s3fRCeYOdwKDCrC9jI9wT",
+      "plays": 1,
+      "last": "2026-11-23T19:14:32.234Z"
+    },
+    "0iBV6djrudVllSHVTSAJbB": {
+      "name": "RIP",
+      "artist": "LUCKI",
+      "art": "https://i.scdn.co/image/ab67616d00001e0219ff025a0574f759db86d3d2",
+      "url": "https://open.spotify.com/track/0iBV6djrudVllSHVTSAJbB",
+      "plays": 1,
+      "last": "2026-11-23T19:16:36.125Z"
+    },
+    "4jTiyLlOJVJj3mCr7yfPQD": {
+      "name": "This Could Be Us",
+      "artist": "Rae Sremmurd",
+      "art": "https://i.scdn.co/image/ab67616d00001e024ca3fb4517ff722918877460",
+      "url": "https://open.spotify.com/track/4jTiyLlOJVJj3mCr7yfPQD",
+      "plays": 1,
+      "last": "2026-11-23T19:20:11.272Z"
+    },
+    "37PWu4Av27EVfKwx2UVJA1": {
+      "name": "Smaxk Or Die (feat. Playboi Carti)",
+      "artist": "Fatt Smaxk, Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e028b5fc4df8b9e2c15bf846ca7",
+      "url": "https://open.spotify.com/track/37PWu4Av27EVfKwx2UVJA1",
+      "plays": 1,
+      "last": "2026-11-23T19:22:16.859Z"
+    },
+    "0YYMXRKWFKESvU7XVK5JlE": {
+      "name": "Off The Grid",
+      "artist": "Kanye West",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c5663e50de353981ed2b1a37",
+      "url": "https://open.spotify.com/track/0YYMXRKWFKESvU7XVK5JlE",
+      "plays": 1,
+      "last": "2026-11-23T19:24:48.883Z"
+    },
+    "2Hh3ETdQKrmSI3QS0hme7g": {
+      "name": "Too Many Nights (feat. Don Toliver & with Future)",
+      "artist": "Metro Boomin, Future, Don Toliver",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c4fee55d7b51479627c31f89",
+      "url": "https://open.spotify.com/track/2Hh3ETdQKrmSI3QS0hme7g",
+      "plays": 1,
+      "last": "2026-11-23T20:05:22.795Z"
+    },
+    "1TgStpMGTflN84asKJ8VU3": {
+      "name": "U My Everything (feat. Drake)",
+      "artist": "Sexyy Red, Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e027c7eda8880dbfd0930bf9491",
+      "url": "https://open.spotify.com/track/1TgStpMGTflN84asKJ8VU3",
+      "plays": 1,
+      "last": "2026-11-23T20:19:52.097Z"
+    },
+    "2Q3jFbyE61mCjS3SkW4toJ": {
+      "name": "Race My Mind",
+      "artist": "Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f",
+      "url": "https://open.spotify.com/track/2Q3jFbyE61mCjS3SkW4toJ",
+      "plays": 1,
+      "last": "2026-11-23T20:24:22.501Z"
+    },
+    "11pEKMLmavDu8fxOB5QjbQ": {
+      "name": "Pipe Down",
+      "artist": "Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f",
+      "url": "https://open.spotify.com/track/11pEKMLmavDu8fxOB5QjbQ",
+      "plays": 1,
+      "last": "2026-11-23T20:27:48.701Z"
+    },
+    "4gEtNhWQB2XpivFLdpHwxc": {
+      "name": "Hallelujah",
+      "artist": "Chief Keef",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a76616abf60ce17491e95891",
+      "url": "https://open.spotify.com/track/4gEtNhWQB2XpivFLdpHwxc",
+      "plays": 1,
+      "last": "2026-11-23T20:30:57.086Z"
+    },
+    "4F6yN5FsFW10Ucx7cLCzBh": {
+      "name": "Ready (feat. Gunna)",
+      "artist": "Lil Baby, Gunna",
+      "art": "https://i.scdn.co/image/ab67616d00001e027cb0c4f7761f6dd66aaca065",
+      "url": "https://open.spotify.com/track/4F6yN5FsFW10Ucx7cLCzBh",
+      "plays": 1,
+      "last": "2026-11-23T20:34:36.197Z"
+    },
+    "3L0IKstjUgDFVQAbQIRZRv": {
+      "name": "R.I.P.",
+      "artist": "Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a1e867d40e7bb29ced5c0194",
+      "url": "https://open.spotify.com/track/3L0IKstjUgDFVQAbQIRZRv",
+      "plays": 1,
+      "last": "2026-11-23T20:37:56.194Z"
+    },
+    "48GihjnmhKG9a6wbKJC6MF": {
+      "name": "Sh*t Sad",
+      "artist": "ian, Chief Keef",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c213d06355de005be245b29c",
+      "url": "https://open.spotify.com/track/48GihjnmhKG9a6wbKJC6MF",
+      "plays": 1,
+      "last": "2026-11-23T20:41:09.265Z"
+    },
+    "5JEx7HbmvHQQswJCsoo9rA": {
+      "name": "Close To Me (with Diplo) (feat. Swae Lee)",
+      "artist": "Ellie Goulding, Diplo, Swae Lee",
+      "art": "https://i.scdn.co/image/ab67616d00001e02dd640dbca55836e23894212a",
+      "url": "https://open.spotify.com/track/5JEx7HbmvHQQswJCsoo9rA",
+      "plays": 1,
+      "last": "2026-11-24T02:04:20.918Z"
     }
   }
 }
