@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-24T02:04:20.918Z",
-  "updated": "2026-11-24T02:23:17.739Z",
+  "cursor": "2026-11-24T07:19:21.512Z",
+  "updated": "2026-11-24T13:58:53.434Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -178,6 +178,78 @@
       "url": "https://open.spotify.com/track/5JEx7HbmvHQQswJCsoo9rA",
       "plays": 1,
       "last": "2026-11-24T02:04:20.918Z"
+    },
+    "2lpygKqzPFtItQ4ss3cgfb": {
+      "name": "Cinderella (feat. Ty Dolla $ign)",
+      "artist": "Mac Miller, Ty Dolla $ign",
+      "art": "https://i.scdn.co/image/ab67616d00001e022e92f776279eaf45d14a33fd",
+      "url": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
+      "plays": 1,
+      "last": "2026-11-24T02:10:31.523Z"
+    },
+    "5w10naLxZ0NwN4NnzzfFQt": {
+      "name": "Kills",
+      "artist": "OsamaSon",
+      "art": "https://i.scdn.co/image/ab67616d00001e026f3676f3d941404a69fe5caf",
+      "url": "https://open.spotify.com/track/5w10naLxZ0NwN4NnzzfFQt",
+      "plays": 1,
+      "last": "2026-11-24T02:32:46.450Z"
+    },
+    "32ZGcotUVtU3Zfz9lmM8Mi": {
+      "name": "Praise God",
+      "artist": "Kanye West",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c5663e50de353981ed2b1a37",
+      "url": "https://open.spotify.com/track/32ZGcotUVtU3Zfz9lmM8Mi",
+      "plays": 1,
+      "last": "2026-11-24T02:36:40.919Z"
+    },
+    "1WM1OTVVYSKGtgrDC3UGpp": {
+      "name": "Goyard Shopping Bag",
+      "artist": "knive ♱",
+      "art": "https://i.scdn.co/image/ab67616d00001e0237a45e6d14281bd9e0aca106",
+      "url": "https://open.spotify.com/track/1WM1OTVVYSKGtgrDC3UGpp",
+      "plays": 1,
+      "last": "2026-11-24T02:39:39.665Z"
+    },
+    "1Rza5aDdB05TcKpfz8oKtQ": {
+      "name": "Ref",
+      "artist": "OsamaSon",
+      "art": "https://i.scdn.co/image/ab67616d00001e020af7d595ff17270e4895f5d3",
+      "url": "https://open.spotify.com/track/1Rza5aDdB05TcKpfz8oKtQ",
+      "plays": 1,
+      "last": "2026-11-24T02:46:25.739Z"
+    },
+    "6EohETAKrGAxnDitgIZR2j": {
+      "name": "Molly Ecstacy",
+      "artist": "Nine Vicious",
+      "art": "https://i.scdn.co/image/ab67616d00001e029382b279fa552e0fae460a85",
+      "url": "https://open.spotify.com/track/6EohETAKrGAxnDitgIZR2j",
+      "plays": 1,
+      "last": "2026-11-24T03:23:44.766Z"
+    },
+    "1UGD3lW3tDmgZfAVDh6w7r": {
+      "name": "Devil In A New Dress",
+      "artist": "Kanye West, Rick Ross",
+      "art": "https://i.scdn.co/image/ab67616d00001e02d9194aa18fa4c9362b47464f",
+      "url": "https://open.spotify.com/track/1UGD3lW3tDmgZfAVDh6w7r",
+      "plays": 1,
+      "last": "2026-11-24T03:32:00.689Z"
+    },
+    "7sBwAWyXfiIgrYQ8BaJESH": {
+      "name": "Keep The Family Close",
+      "artist": "Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e029416ed64daf84936d89e671c",
+      "url": "https://open.spotify.com/track/7sBwAWyXfiIgrYQ8BaJESH",
+      "plays": 1,
+      "last": "2026-11-24T03:34:59.428Z"
+    },
+    "49jtQiip2REdywl9ZDjFms": {
+      "name": "make sum noise",
+      "artist": "Winnixq",
+      "art": "https://i.scdn.co/image/ab67616d00001e02d40ec2807b12a7cd798f8cdb",
+      "url": "https://open.spotify.com/track/49jtQiip2REdywl9ZDjFms",
+      "plays": 1,
+      "last": "2026-11-24T07:19:21.512Z"
     }
   }
 }
