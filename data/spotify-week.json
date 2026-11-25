@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-24T07:19:21.512Z",
-  "updated": "2026-11-24T13:58:53.434Z",
+  "cursor": "2026-11-25T06:16:30.935Z",
+  "updated": "2026-11-25T08:52:36.239Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -64,8 +64,8 @@
       "artist": "Playboi Carti",
       "art": "https://i.scdn.co/image/ab67616d00001e027f62c9c136c0ab9ef78f2d15",
       "url": "https://open.spotify.com/track/5tLZfwzwK8KxoBsNwbNFDI",
-      "plays": 1,
-      "last": "2026-11-23T19:00:18.131Z"
+      "plays": 2,
+      "last": "2026-11-25T03:37:44.720Z"
     },
     "6s3fRCeYOdwKDCrC9jI9wT": {
       "name": "Lady Killers II",
@@ -248,8 +248,208 @@
       "artist": "Winnixq",
       "art": "https://i.scdn.co/image/ab67616d00001e02d40ec2807b12a7cd798f8cdb",
       "url": "https://open.spotify.com/track/49jtQiip2REdywl9ZDjFms",
+      "plays": 2,
+      "last": "2026-11-25T03:33:10.661Z"
+    },
+    "7IMqyfNSnAX1yaQGH5mAh3": {
+      "name": "Walk The Walk",
+      "artist": "Stay Focused Frank, Yuno Miles, Nezlo, Jaysstra",
+      "art": "https://i.scdn.co/image/ab67616d00001e02ce4e3cb3e33bac86df7a47ac",
+      "url": "https://open.spotify.com/track/7IMqyfNSnAX1yaQGH5mAh3",
+      "plays": 2,
+      "last": "2026-11-25T04:06:28.335Z"
+    },
+    "7FXNWirrkdPPrp3L7Dtt8b": {
+      "name": "That Way",
+      "artist": "Yuno Miles",
+      "art": "https://i.scdn.co/image/ab67616d00001e0224d34ccf7061fffa34b05888",
+      "url": "https://open.spotify.com/track/7FXNWirrkdPPrp3L7Dtt8b",
       "plays": 1,
-      "last": "2026-11-24T07:19:21.512Z"
+      "last": "2026-11-24T22:29:38.736Z"
+    },
+    "51KPr8se6FIn1T4WECvoKS": {
+      "name": "BROTHER STONE (FEAT. KODAK BLACK)",
+      "artist": "Don Toliver, Kodak Black",
+      "art": "https://i.scdn.co/image/ab67616d00001e029a1a952b7616b7681c3ec3b5",
+      "url": "https://open.spotify.com/track/51KPr8se6FIn1T4WECvoKS",
+      "plays": 1,
+      "last": "2026-11-24T22:43:47.545Z"
+    },
+    "0wvIGFIgbyz4JNwQhZgTv2": {
+      "name": "Rooster (2022 Remaster)",
+      "artist": "Alice In Chains",
+      "art": "https://i.scdn.co/image/ab67616d00001e022d1447994ec24301429681cb",
+      "url": "https://open.spotify.com/track/0wvIGFIgbyz4JNwQhZgTv2",
+      "plays": 1,
+      "last": "2026-11-24T23:09:48.520Z"
+    },
+    "2DlHlPMa4M17kufBvI2lEN": {
+      "name": "Chop Suey!",
+      "artist": "System Of A Down",
+      "art": "https://i.scdn.co/image/ab67616d00001e0207bc7d2a745636c356b4d0aa",
+      "url": "https://open.spotify.com/track/2DlHlPMa4M17kufBvI2lEN",
+      "plays": 2,
+      "last": "2026-11-24T23:27:41.094Z"
+    },
+    "5ghIJDpPoe3CfHMGu71E6T": {
+      "name": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "art": "https://i.scdn.co/image/ab67616d00001e02e175a19e530c898d167d39bf",
+      "url": "https://open.spotify.com/track/5ghIJDpPoe3CfHMGu71E6T",
+      "plays": 1,
+      "last": "2026-11-24T23:33:17.385Z"
+    },
+    "6gZVQvQZOFpzIy3HblJ20F": {
+      "name": "Man in the Box",
+      "artist": "Alice In Chains",
+      "art": "https://i.scdn.co/image/ab67616d00001e023cf83c82a8e976d7b51e2d00",
+      "url": "https://open.spotify.com/track/6gZVQvQZOFpzIy3HblJ20F",
+      "plays": 1,
+      "last": "2026-11-24T23:41:26.315Z"
+    },
+    "2EoOZnxNgtmZaD8uUmz2nD": {
+      "name": "Black Hole Sun",
+      "artist": "Soundgarden",
+      "art": "https://i.scdn.co/image/ab67616d00001e02ae6d8e36136353d550b2587d",
+      "url": "https://open.spotify.com/track/2EoOZnxNgtmZaD8uUmz2nD",
+      "plays": 1,
+      "last": "2026-11-24T23:46:45.412Z"
+    },
+    "0CkspLl535ZxdwCRs8AdZ4": {
+      "name": "Plush - 2017 Remaster",
+      "artist": "Stone Temple Pilots",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b8bc0f023ff7a1c6663f28ec",
+      "url": "https://open.spotify.com/track/0CkspLl535ZxdwCRs8AdZ4",
+      "plays": 1,
+      "last": "2026-11-24T23:52:02.672Z"
+    },
+    "7vgTNTaEz3CsBZ1N4YQalM": {
+      "name": "Ghost Town",
+      "artist": "Kanye West, PARTYNEXTDOOR",
+      "art": "https://i.scdn.co/image/ab67616d00001e020cd942c1a864afa4e92d04f2",
+      "url": "https://open.spotify.com/track/7vgTNTaEz3CsBZ1N4YQalM",
+      "plays": 1,
+      "last": "2026-11-24T23:56:48.107Z"
+    },
+    "0wXjZ7aSrgM2BYZaTNpjdh": {
+      "name": "CN TOWER",
+      "artist": "PARTYNEXTDOOR, Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e0282e549302f7a635fedc98331",
+      "url": "https://open.spotify.com/track/0wXjZ7aSrgM2BYZaTNpjdh",
+      "plays": 1,
+      "last": "2026-11-25T00:00:50.505Z"
+    },
+    "3HWzoMvoF3TQfYg4UPszDq": {
+      "name": "Truth Hurts",
+      "artist": "Lizzo",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cf6e41c933cfc7694da6e6d4",
+      "url": "https://open.spotify.com/track/3HWzoMvoF3TQfYg4UPszDq",
+      "plays": 1,
+      "last": "2026-11-25T00:19:50.104Z"
+    },
+    "2r7BPog74oaTG5shNYiUnV": {
+      "name": "House Of Balloons / Glass Table Girls",
+      "artist": "The Weeknd",
+      "art": "https://i.scdn.co/image/ab67616d00001e02274b406a7e18acebcf743079",
+      "url": "https://open.spotify.com/track/2r7BPog74oaTG5shNYiUnV",
+      "plays": 1,
+      "last": "2026-11-25T00:30:52.766Z"
+    },
+    "6n4U3TlzUGhdSFbUUhTvLP": {
+      "name": "Walk It Talk It",
+      "artist": "Migos, Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e029c188c494d8bfaf895411890",
+      "url": "https://open.spotify.com/track/6n4U3TlzUGhdSFbUUhTvLP",
+      "plays": 1,
+      "last": "2026-11-25T00:44:28.859Z"
+    },
+    "0PGj9A3Yg5mXfp4VYlL2HY": {
+      "name": "AT THE PARTY (feat. Pharrell Williams & Travis Scott)",
+      "artist": "Kid Cudi, Pharrell Williams, Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e02bbf99eb282ff165289120b1e",
+      "url": "https://open.spotify.com/track/0PGj9A3Yg5mXfp4VYlL2HY",
+      "plays": 1,
+      "last": "2026-11-25T00:52:48.597Z"
+    },
+    "3Ol2xnObFdKV9pmRD2t9x8": {
+      "name": "Look Back at It",
+      "artist": "A Boogie Wit da Hoodie",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a5c7151899ae5da4f4382d54",
+      "url": "https://open.spotify.com/track/3Ol2xnObFdKV9pmRD2t9x8",
+      "plays": 1,
+      "last": "2026-11-25T03:41:19.719Z"
+    },
+    "68gLp89kAggh1LE9YYlEuH": {
+      "name": "Ghetto Boy Shit (feat. RMC Mike)",
+      "artist": "Lil Yachty, Rmc Mike",
+      "art": "https://i.scdn.co/image/ab67616d00001e02ce747f352b4b912c229fd84f",
+      "url": "https://open.spotify.com/track/68gLp89kAggh1LE9YYlEuH",
+      "plays": 1,
+      "last": "2026-11-25T03:54:23.079Z"
+    },
+    "5iNRH898mTdxJ5jOFehrlP": {
+      "name": "Paranoid (feat. Destroy Lonely)",
+      "artist": "Ken Carson, Destroy Lonely",
+      "art": "https://i.scdn.co/image/ab67616d00001e023b494c1b464d41ef641de442",
+      "url": "https://open.spotify.com/track/5iNRH898mTdxJ5jOFehrlP",
+      "plays": 1,
+      "last": "2026-11-25T03:57:07.340Z"
+    },
+    "0YgyE3xIbYNzYhaPPHqrXJ": {
+      "name": "Tic Tac Toe (with Ken Carson)",
+      "artist": "Lil Tecca, Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e0286c8cd0e15776fa1e18715ec",
+      "url": "https://open.spotify.com/track/0YgyE3xIbYNzYhaPPHqrXJ",
+      "plays": 1,
+      "last": "2026-11-25T04:31:08.703Z"
+    },
+    "75JFxkI2RXiU7L9VXzMkle": {
+      "name": "The Scientist",
+      "artist": "Coldplay",
+      "art": "https://i.scdn.co/image/ab67616d00001e02de09e02aa7febf30b7c02d82",
+      "url": "https://open.spotify.com/track/75JFxkI2RXiU7L9VXzMkle",
+      "plays": 1,
+      "last": "2026-11-25T05:58:14.351Z"
+    },
+    "3Y4rUyw7XBCK6hGHCOt6rp": {
+      "name": "Call It Fate, Call It Karma",
+      "artist": "The Strokes",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f07ef193e0bb6a238ea37f0a",
+      "url": "https://open.spotify.com/track/3Y4rUyw7XBCK6hGHCOt6rp",
+      "plays": 1,
+      "last": "2026-11-25T06:01:39.688Z"
+    },
+    "7BqBn9nzAq8spo5e7cZ0dJ": {
+      "name": "Just the Way You Are",
+      "artist": "Bruno Mars",
+      "art": "https://i.scdn.co/image/ab67616d00001e027039c1c841fc3dfa2ad8a0d8",
+      "url": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ",
+      "plays": 1,
+      "last": "2026-11-25T06:05:20.847Z"
+    },
+    "2TjdnqlpwOjhijHCwHCP2d": {
+      "name": "The Great Gig in the Sky",
+      "artist": "Pink Floyd",
+      "art": "https://i.scdn.co/image/ab67616d00001e02db216ca805faf5fe35df4ee6",
+      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d",
+      "plays": 1,
+      "last": "2026-11-25T06:10:05.846Z"
+    },
+    "7ghKr0pCYyPPyp7t1FH8k4": {
+      "name": "Les",
+      "artist": "Childish Gambino",
+      "art": "https://i.scdn.co/image/ab67616d00001e026182cfe2e2a090d125c81dc0",
+      "url": "https://open.spotify.com/track/7ghKr0pCYyPPyp7t1FH8k4",
+      "plays": 1,
+      "last": "2026-11-25T06:15:23.547Z"
+    },
+    "2a1iMaoWQ5MnvLFBDv4qkf": {
+      "name": "High and Dry",
+      "artist": "Radiohead",
+      "art": "https://i.scdn.co/image/ab67616d00001e029293c743fa542094336c5e12",
+      "url": "https://open.spotify.com/track/2a1iMaoWQ5MnvLFBDv4qkf",
+      "plays": 1,
+      "last": "2026-11-25T06:16:30.935Z"
     }
   }
 }
