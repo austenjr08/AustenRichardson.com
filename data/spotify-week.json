@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-25T06:16:30.935Z",
-  "updated": "2026-11-25T08:52:36.239Z",
+  "cursor": "2026-11-26T01:01:26.219Z",
+  "updated": "2026-11-26T02:55:09.396Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -144,8 +144,8 @@
       "artist": "Chief Keef",
       "art": "https://i.scdn.co/image/ab67616d00001e02a76616abf60ce17491e95891",
       "url": "https://open.spotify.com/track/4gEtNhWQB2XpivFLdpHwxc",
-      "plays": 1,
-      "last": "2026-11-23T20:30:57.086Z"
+      "plays": 2,
+      "last": "2026-11-25T23:43:09.550Z"
     },
     "4F6yN5FsFW10Ucx7cLCzBh": {
       "name": "Ready (feat. Gunna)",
@@ -248,8 +248,8 @@
       "artist": "Winnixq",
       "art": "https://i.scdn.co/image/ab67616d00001e02d40ec2807b12a7cd798f8cdb",
       "url": "https://open.spotify.com/track/49jtQiip2REdywl9ZDjFms",
-      "plays": 2,
-      "last": "2026-11-25T03:33:10.661Z"
+      "plays": 3,
+      "last": "2026-11-25T23:00:14.059Z"
     },
     "7IMqyfNSnAX1yaQGH5mAh3": {
       "name": "Walk The Walk",
@@ -450,6 +450,62 @@
       "url": "https://open.spotify.com/track/2a1iMaoWQ5MnvLFBDv4qkf",
       "plays": 1,
       "last": "2026-11-25T06:16:30.935Z"
+    },
+    "7sdHMJvhKib3ReVPsZFbrf": {
+      "name": "Rock N Roll",
+      "artist": "Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e0277598350682bd2b39d58582e",
+      "url": "https://open.spotify.com/track/7sdHMJvhKib3ReVPsZFbrf",
+      "plays": 1,
+      "last": "2026-11-25T23:03:00.246Z"
+    },
+    "2xLMifQCjDGFmkHkpNLD9h": {
+      "name": "SICKO MODE",
+      "artist": "Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e02daec894c14c0ca42d76eeb32",
+      "url": "https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h",
+      "plays": 1,
+      "last": "2026-11-25T23:13:05.653Z"
+    },
+    "487JCvAXVblflZyDJn3fSp": {
+      "name": "Help Me",
+      "artist": "Real Boston Richey",
+      "art": "https://i.scdn.co/image/ab67616d00001e029304d2a293f9eaf216b610cc",
+      "url": "https://open.spotify.com/track/487JCvAXVblflZyDJn3fSp",
+      "plays": 1,
+      "last": "2026-11-25T23:16:07.358Z"
+    },
+    "1Rq4GtIucW9CAcF8B6PAbW": {
+      "name": "I Serve the Base",
+      "artist": "Future",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b2592bea12d840fd096ef965",
+      "url": "https://open.spotify.com/track/1Rq4GtIucW9CAcF8B6PAbW",
+      "plays": 1,
+      "last": "2026-11-25T23:36:09.374Z"
+    },
+    "0k1WUmIRnG3xU6fvvDVfRG": {
+      "name": "Way 2 Sexy (with Future & Young Thug)",
+      "artist": "Drake, Future, Young Thug",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f",
+      "url": "https://open.spotify.com/track/0k1WUmIRnG3xU6fvvDVfRG",
+      "plays": 1,
+      "last": "2026-11-26T00:30:03.125Z"
+    },
+    "6cIWZnJZidKcqGuArAUABr": {
+      "name": "I'M ON ONE (feat. Drake)",
+      "artist": "Future, Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c3886b1f21a75622d47c2031",
+      "url": "https://open.spotify.com/track/6cIWZnJZidKcqGuArAUABr",
+      "plays": 1,
+      "last": "2026-11-26T00:47:34.240Z"
+    },
+    "7BbbLiARcvEIhyMCcTRfJr": {
+      "name": "Same Damn Time (Remix) (feat. Diddy & Ludacris)",
+      "artist": "Future, Diddy, Ludacris",
+      "art": "https://i.scdn.co/image/ab67616d00001e02350a058cc9f52e641c1ef9cf",
+      "url": "https://open.spotify.com/track/7BbbLiARcvEIhyMCcTRfJr",
+      "plays": 1,
+      "last": "2026-11-26T01:01:26.219Z"
     }
   }
 }
