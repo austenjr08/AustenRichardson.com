@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-26T01:01:26.219Z",
-  "updated": "2026-11-26T02:55:09.396Z",
+  "cursor": "2026-11-26T04:12:06.313Z",
+  "updated": "2026-11-26T12:54:00.015Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -506,6 +506,14 @@
       "url": "https://open.spotify.com/track/7BbbLiARcvEIhyMCcTRfJr",
       "plays": 1,
       "last": "2026-11-26T01:01:26.219Z"
+    },
+    "26QJuQfM8PVAWkIm1JRyqq": {
+      "name": "ss",
+      "artist": "Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e023b494c1b464d41ef641de442",
+      "url": "https://open.spotify.com/track/26QJuQfM8PVAWkIm1JRyqq",
+      "plays": 1,
+      "last": "2026-11-26T04:12:06.313Z"
     }
   }
 }
