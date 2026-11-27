@@ -35,18 +35,34 @@ function tzOffset(ms) {
   return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second) - ms;
 }
 
+// Spotify sometimes has short outages (503, 429...). Retry a few times; if it's still down,
+// give up quietly: the next hourly run catches up on the missed plays.
+class SpotifyDown extends Error {}
+async function spotifyFetch(url, opts, what) {
+  for (let attempt = 1; ; attempt++) {
+    let r;
+    try { r = await fetch(url, opts); } catch (e) { r = { ok: false, status: 0, text: async () => e.message }; }
+    if (r.ok) return r;
+    const temporary = r.status === 0 || r.status === 429 || r.status >= 500;
+    const msg = `Spotify ${what} failed: ${r.status} ${await r.text()}`;
+    if (!temporary) throw new Error(msg);
+    if (attempt >= 4) throw new SpotifyDown(msg);
+    console.log(`${msg} (retrying)`);
+    await new Promise(res => setTimeout(res, attempt * 10000));
+  }
+}
+
 async function accessToken() {
   const { SPOTIFY_CLIENT_ID: id, SPOTIFY_CLIENT_SECRET: secret, SPOTIFY_REFRESH_TOKEN: refresh } = process.env;
   if (!id || !secret || !refresh) throw new Error('Missing SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET or SPOTIFY_REFRESH_TOKEN');
-  const r = await fetch('https://accounts.spotify.com/api/token', {
+  const r = await spotifyFetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: {
       Authorization: 'Basic ' + Buffer.from(`${id}:${secret}`).toString('base64'),
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     body: new URLSearchParams({ grant_type: 'refresh_token', refresh_token: refresh }),
-  });
-  if (!r.ok) throw new Error(`Spotify token request failed: ${r.status} ${await r.text()}`);
+  }, 'token request');
   return (await r.json()).access_token;
 }
 
@@ -61,8 +77,7 @@ async function recentPlays(after) {
     const url = new URL('https://api.spotify.com/v1/me/player/recently-played');
     url.searchParams.set('limit', '50');
     if (after) url.searchParams.set('after', String(after));
-    const r = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
-    if (!r.ok) throw new Error(`Spotify recently-played failed: ${r.status} ${await r.text()}`);
+    const r = await spotifyFetch(url, { headers: { Authorization: `Bearer ${token}` } }, 'recently-played');
     items = (await r.json()).items || [];
   }
   return items
@@ -114,5 +129,8 @@ async function main() {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  main().catch(err => { console.error(err.message); process.exit(1); });
+  main().catch(err => {
+    if (err instanceof SpotifyDown) { console.log(`::warning::${err.message}. Skipping this run; the next one will catch up.`); return; }
+    console.error(err.message); process.exit(1);
+  });
 }
