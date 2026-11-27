@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-27T04:49:13.334Z",
-  "updated": "2026-11-27T05:10:14.720Z",
+  "cursor": "2026-11-27T05:37:40.661Z",
+  "updated": "2026-11-27T15:20:58.974Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -522,6 +522,14 @@
       "url": "https://open.spotify.com/track/03tqyYWC9Um2ZqU0ZN849H",
       "plays": 2,
       "last": "2026-11-27T04:49:13.334Z"
+    },
+    "6H2mGTKwDfpudn6J4epAJA": {
+      "name": "I'm So Geeked",
+      "artist": "Che",
+      "art": "https://i.scdn.co/image/ab67616d00001e021fa0dac3b908225b7734f5ea",
+      "url": "https://open.spotify.com/track/6H2mGTKwDfpudn6J4epAJA",
+      "plays": 1,
+      "last": "2026-11-27T05:37:40.661Z"
     }
   }
 }
