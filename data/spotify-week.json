@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-26T04:12:06.313Z",
-  "updated": "2026-11-26T12:54:00.015Z",
+  "cursor": "2026-11-27T04:49:13.334Z",
+  "updated": "2026-11-27T05:10:14.720Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -512,8 +512,16 @@
       "artist": "Ken Carson",
       "art": "https://i.scdn.co/image/ab67616d00001e023b494c1b464d41ef641de442",
       "url": "https://open.spotify.com/track/26QJuQfM8PVAWkIm1JRyqq",
-      "plays": 1,
-      "last": "2026-11-26T04:12:06.313Z"
+      "plays": 2,
+      "last": "2026-11-27T01:48:26.446Z"
+    },
+    "03tqyYWC9Um2ZqU0ZN849H": {
+      "name": "No Hands (feat. Roscoe Dash & Wale)",
+      "artist": "Waka Flocka Flame, Roscoe Dash, Wale",
+      "art": "https://i.scdn.co/image/f9cc2e5d29b97a944a08331834c620a44da47e08",
+      "url": "https://open.spotify.com/track/03tqyYWC9Um2ZqU0ZN849H",
+      "plays": 2,
+      "last": "2026-11-27T04:49:13.334Z"
     }
   }
 }
