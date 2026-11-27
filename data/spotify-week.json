@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-27T05:37:40.661Z",
-  "updated": "2026-11-27T15:20:58.974Z",
+  "cursor": "2026-11-27T22:12:39.963Z",
+  "updated": "2026-11-27T23:37:12.593Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -56,8 +56,8 @@
       "artist": "Stone Temple Pilots",
       "art": "https://i.scdn.co/image/ab67616d00001e0277696910e15c42a5e37636e5",
       "url": "https://open.spotify.com/track/600s08VdbjiyAjDGDjYSFI",
-      "plays": 2,
-      "last": "2026-11-23T02:54:30.322Z"
+      "plays": 3,
+      "last": "2026-11-27T18:02:57.006Z"
     },
     "5tLZfwzwK8KxoBsNwbNFDI": {
       "name": "AHH YEA",
@@ -104,8 +104,8 @@
       "artist": "Kanye West",
       "art": "https://i.scdn.co/image/ab67616d00001e02c5663e50de353981ed2b1a37",
       "url": "https://open.spotify.com/track/0YYMXRKWFKESvU7XVK5JlE",
-      "plays": 1,
-      "last": "2026-11-23T19:24:48.883Z"
+      "plays": 2,
+      "last": "2026-11-27T22:12:39.963Z"
     },
     "2Hh3ETdQKrmSI3QS0hme7g": {
       "name": "Too Many Nights (feat. Don Toliver & with Future)",
@@ -248,8 +248,8 @@
       "artist": "Winnixq",
       "art": "https://i.scdn.co/image/ab67616d00001e02d40ec2807b12a7cd798f8cdb",
       "url": "https://open.spotify.com/track/49jtQiip2REdywl9ZDjFms",
-      "plays": 3,
-      "last": "2026-11-25T23:00:14.059Z"
+      "plays": 4,
+      "last": "2026-11-27T20:40:02.055Z"
     },
     "7IMqyfNSnAX1yaQGH5mAh3": {
       "name": "Walk The Walk",
@@ -530,6 +530,86 @@
       "url": "https://open.spotify.com/track/6H2mGTKwDfpudn6J4epAJA",
       "plays": 1,
       "last": "2026-11-27T05:37:40.661Z"
+    },
+    "4EWCNWgDS8707fNSZ1oaA5": {
+      "name": "Heartless",
+      "artist": "Kanye West",
+      "art": "https://i.scdn.co/image/ab67616d00001e02346d77e155d854735410ed18",
+      "url": "https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5",
+      "plays": 1,
+      "last": "2026-11-27T18:47:07.909Z"
+    },
+    "3BovdzfaX4jb5KFQwoPfAw": {
+      "name": "Beat It",
+      "artist": "Michael Jackson",
+      "art": "https://i.scdn.co/image/ab67616d00001e0232a7d87248d1b75463483df5",
+      "url": "https://open.spotify.com/track/3BovdzfaX4jb5KFQwoPfAw",
+      "plays": 1,
+      "last": "2026-11-27T18:57:30.590Z"
+    },
+    "60gXcKYw48lMKCA5mChzK9": {
+      "name": "NOKIA",
+      "artist": "Drake",
+      "art": "https://i.scdn.co/image/ab67616d00001e021d239bf182b9be629af3b6a9",
+      "url": "https://open.spotify.com/track/60gXcKYw48lMKCA5mChzK9",
+      "plays": 1,
+      "last": "2026-11-27T19:13:13.222Z"
+    },
+    "1jIDFaZZ8effqkQGzRNg0E": {
+      "name": "WHATS POPPIN (feat. DaBaby, Tory Lanez & Lil Wayne) - Remix",
+      "artist": "Jack Harlow, Tory Lanez, DaBaby, Lil Wayne",
+      "art": "https://i.scdn.co/image/ab67616d00001e02fcce3ce4beb12bfea71df426",
+      "url": "https://open.spotify.com/track/1jIDFaZZ8effqkQGzRNg0E",
+      "plays": 1,
+      "last": "2026-11-27T19:55:30.873Z"
+    },
+    "655CvpZ5IlPksoSNS6V4qq": {
+      "name": "Black Bandana",
+      "artist": "Molly Santana",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cad913a44363489e3900d1f8",
+      "url": "https://open.spotify.com/track/655CvpZ5IlPksoSNS6V4qq",
+      "plays": 1,
+      "last": "2026-11-27T20:55:59.140Z"
+    },
+    "2FTeQQ5Rg9tBpgpTF5mnhE": {
+      "name": "Still Think About You",
+      "artist": "A Boogie Wit da Hoodie",
+      "art": "https://i.scdn.co/image/ab67616d00001e02f2baf6d743ae26f97777f026",
+      "url": "https://open.spotify.com/track/2FTeQQ5Rg9tBpgpTF5mnhE",
+      "plays": 1,
+      "last": "2026-11-27T21:43:44.145Z"
+    },
+    "5fSZXFOZfPVW9gvnnG4ZVW": {
+      "name": "Punk Monk",
+      "artist": "Playboi Carti",
+      "art": "https://i.scdn.co/image/ab67616d00001e0298ea0e689c91f8fea726d9bb",
+      "url": "https://open.spotify.com/track/5fSZXFOZfPVW9gvnnG4ZVW",
+      "plays": 1,
+      "last": "2026-11-27T21:44:01.380Z"
+    },
+    "1zi7xx7UVEFkmKfv06H8x0": {
+      "name": "One Dance",
+      "artist": "Drake, Wizkid, Kyla",
+      "art": "https://i.scdn.co/image/ab67616d00001e029416ed64daf84936d89e671c",
+      "url": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
+      "plays": 1,
+      "last": "2026-11-27T21:56:27.678Z"
+    },
+    "0pSBuHjILhNEo55xK1zrRt": {
+      "name": "Rolex",
+      "artist": "Ayo & Teo",
+      "art": "https://i.scdn.co/image/ab67616d00001e0279dbd95fbdf6b0d617bd32dd",
+      "url": "https://open.spotify.com/track/0pSBuHjILhNEo55xK1zrRt",
+      "plays": 1,
+      "last": "2026-11-27T21:58:49.124Z"
+    },
+    "2JuasWPUodaUxf5nwNpciQ": {
+      "name": "Nutshell",
+      "artist": "Alice In Chains",
+      "art": "https://i.scdn.co/image/ab67616d00001e0225b42be683b8d3c6500db726",
+      "url": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "plays": 1,
+      "last": "2026-11-27T22:09:51.691Z"
     }
   }
 }
