@@ -1,7 +1,7 @@
 {
   "weekStart": "2026-11-22T05:00:00.000Z",
-  "cursor": "2026-11-27T22:12:39.963Z",
-  "updated": "2026-11-27T23:37:12.593Z",
+  "cursor": "2026-11-28T08:03:23.271Z",
+  "updated": "2026-11-28T08:07:07.710Z",
   "tracks": {
     "34tz0eDhGuFErIuW3q4mPX": {
       "name": "On BS",
@@ -248,8 +248,8 @@
       "artist": "Winnixq",
       "art": "https://i.scdn.co/image/ab67616d00001e02d40ec2807b12a7cd798f8cdb",
       "url": "https://open.spotify.com/track/49jtQiip2REdywl9ZDjFms",
-      "plays": 4,
-      "last": "2026-11-27T20:40:02.055Z"
+      "plays": 7,
+      "last": "2026-11-28T04:51:31.623Z"
     },
     "7IMqyfNSnAX1yaQGH5mAh3": {
       "name": "Walk The Walk",
@@ -376,8 +376,8 @@
       "artist": "A Boogie Wit da Hoodie",
       "art": "https://i.scdn.co/image/ab67616d00001e02a5c7151899ae5da4f4382d54",
       "url": "https://open.spotify.com/track/3Ol2xnObFdKV9pmRD2t9x8",
-      "plays": 1,
-      "last": "2026-11-25T03:41:19.719Z"
+      "plays": 2,
+      "last": "2026-11-28T03:40:24.500Z"
     },
     "68gLp89kAggh1LE9YYlEuH": {
       "name": "Ghetto Boy Shit (feat. RMC Mike)",
@@ -432,8 +432,8 @@
       "artist": "Pink Floyd",
       "art": "https://i.scdn.co/image/ab67616d00001e02db216ca805faf5fe35df4ee6",
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d",
-      "plays": 1,
-      "last": "2026-11-25T06:10:05.846Z"
+      "plays": 2,
+      "last": "2026-11-28T07:59:05.974Z"
     },
     "7ghKr0pCYyPPyp7t1FH8k4": {
       "name": "Les",
@@ -464,8 +464,8 @@
       "artist": "Travis Scott",
       "art": "https://i.scdn.co/image/ab67616d00001e02daec894c14c0ca42d76eeb32",
       "url": "https://open.spotify.com/track/2xLMifQCjDGFmkHkpNLD9h",
-      "plays": 1,
-      "last": "2026-11-25T23:13:05.653Z"
+      "plays": 2,
+      "last": "2026-11-28T03:53:38.678Z"
     },
     "487JCvAXVblflZyDJn3fSp": {
       "name": "Help Me",
@@ -610,6 +610,254 @@
       "url": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
       "plays": 1,
       "last": "2026-11-27T22:09:51.691Z"
+    },
+    "0526DaOuV7mRlPKxhMSJKw": {
+      "name": "My Collection",
+      "artist": "Future",
+      "art": "https://i.scdn.co/image/ab67616d00001e027567ec7d3c07783e4f2111e0",
+      "url": "https://open.spotify.com/track/0526DaOuV7mRlPKxhMSJKw",
+      "plays": 1,
+      "last": "2026-11-27T23:47:06.001Z"
+    },
+    "5SsR3wtCOafDmZgvIdRhSm": {
+      "name": "Man Of The Year",
+      "artist": "ScHoolboy Q",
+      "art": "https://i.scdn.co/image/ab67616d00001e0236977e237a8f70ec6c990636",
+      "url": "https://open.spotify.com/track/5SsR3wtCOafDmZgvIdRhSm",
+      "plays": 1,
+      "last": "2026-11-27T23:47:31.102Z"
+    },
+    "4heBcjj4Lw3X2sQVFNbLbz": {
+      "name": "Scared Money (feat. J. Cole and Moneybagg Yo)",
+      "artist": "YG, J. Cole, Moneybagg Yo",
+      "art": "https://i.scdn.co/image/ab67616d00001e02a2f0cb8e3ae7245b746333b6",
+      "url": "https://open.spotify.com/track/4heBcjj4Lw3X2sQVFNbLbz",
+      "plays": 2,
+      "last": "2026-11-28T01:03:39.194Z"
+    },
+    "3s7MCdXyWmwjdcWh7GWXas": {
+      "name": "Violent Crimes",
+      "artist": "Kanye West",
+      "art": "https://i.scdn.co/image/ab67616d00001e020cd942c1a864afa4e92d04f2",
+      "url": "https://open.spotify.com/track/3s7MCdXyWmwjdcWh7GWXas",
+      "plays": 1,
+      "last": "2026-11-28T01:35:40.383Z"
+    },
+    "7EOgQuWYzWIgCfe5zEe1dl": {
+      "name": "Fukk A Interview",
+      "artist": "Future",
+      "art": "https://i.scdn.co/image/ab67616d00001e02df594136a4d46f1347159c21",
+      "url": "https://open.spotify.com/track/7EOgQuWYzWIgCfe5zEe1dl",
+      "plays": 1,
+      "last": "2026-11-28T01:38:15.711Z"
+    },
+    "3OxL6MuctgZp1e0zxoAZhH": {
+      "name": "Young Metro",
+      "artist": "Future, Metro Boomin, The Weeknd",
+      "art": "https://i.scdn.co/image/ab67616d00001e02cec3fc072352b5f4f637d9fa",
+      "url": "https://open.spotify.com/track/3OxL6MuctgZp1e0zxoAZhH",
+      "plays": 1,
+      "last": "2026-11-28T01:51:17.523Z"
+    },
+    "6HZILIRieu8S0iqY8kIKhj": {
+      "name": "DNA.",
+      "artist": "Kendrick Lamar",
+      "art": "https://i.scdn.co/image/ab67616d00001e028b52c6b9bc4e43d873869699",
+      "url": "https://open.spotify.com/track/6HZILIRieu8S0iqY8kIKhj",
+      "plays": 1,
+      "last": "2026-11-28T03:32:53.282Z"
+    },
+    "4IO8X9W69dIQe0EC5ALXhq": {
+      "name": "Immortal",
+      "artist": "21 Savage",
+      "art": "https://i.scdn.co/image/ab67616d00001e02bf9b0593804f19a707f8fd61",
+      "url": "https://open.spotify.com/track/4IO8X9W69dIQe0EC5ALXhq",
+      "plays": 1,
+      "last": "2026-11-28T03:57:53.942Z"
+    },
+    "6PV1Y0KUHKLgOFMDk33hQd": {
+      "name": "5unna",
+      "artist": "HXG, R5 Homixide",
+      "art": "https://i.scdn.co/image/ab67616d00001e020448ba58be91dafe60bbef06",
+      "url": "https://open.spotify.com/track/6PV1Y0KUHKLgOFMDk33hQd",
+      "plays": 1,
+      "last": "2026-11-28T03:59:34.941Z"
+    },
+    "4BLWggOkXE4uUcEQzn2Wcp": {
+      "name": "Succubus",
+      "artist": "Ken Carson",
+      "art": "https://i.scdn.co/image/ab67616d00001e023b494c1b464d41ef641de442",
+      "url": "https://open.spotify.com/track/4BLWggOkXE4uUcEQzn2Wcp",
+      "plays": 1,
+      "last": "2026-11-28T04:20:14.708Z"
+    },
+    "4Zu3P22LxNRhCi7FiLsQ53": {
+      "name": "BANDIT",
+      "artist": "Don Toliver",
+      "art": "https://i.scdn.co/image/ab67616d00001e029a1a952b7616b7681c3ec3b5",
+      "url": "https://open.spotify.com/track/4Zu3P22LxNRhCi7FiLsQ53",
+      "plays": 1,
+      "last": "2026-11-28T04:20:28.993Z"
+    },
+    "3mBUshAc0QBmfsJdafTMun": {
+      "name": "locked in love",
+      "artist": "Saam Sultan",
+      "art": "https://i.scdn.co/image/ab67616d00001e02ec74cb140c0a8a8a68fe1888",
+      "url": "https://open.spotify.com/track/3mBUshAc0QBmfsJdafTMun",
+      "plays": 1,
+      "last": "2026-11-28T04:56:24.351Z"
+    },
+    "6Jv7kjGkhY2fT4yuBF3aTz": {
+      "name": "Lover, You Should've Come Over",
+      "artist": "Jeff Buckley",
+      "art": "https://i.scdn.co/image/ab67616d00001e02afc2d1d2c8703a10aeded0af",
+      "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz",
+      "plays": 1,
+      "last": "2026-11-28T06:51:21.278Z"
+    },
+    "10nyNJ6zNy2YVYLrcwLccB": {
+      "name": "No Surprises",
+      "artist": "Radiohead",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c8b444df094279e70d0ed856",
+      "url": "https://open.spotify.com/track/10nyNJ6zNy2YVYLrcwLccB",
+      "plays": 1,
+      "last": "2026-11-28T06:55:31.713Z"
+    },
+    "6NMtzpDQBTOfJwMzgMX0zl": {
+      "name": "SKELETONS",
+      "artist": "Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e02daec894c14c0ca42d76eeb32",
+      "url": "https://open.spotify.com/track/6NMtzpDQBTOfJwMzgMX0zl",
+      "plays": 1,
+      "last": "2026-11-28T06:57:57.711Z"
+    },
+    "5TXDeTFVRVY7Cvt0Dw4vWW": {
+      "name": "Revenge",
+      "artist": "XXXTENTACION",
+      "art": "https://i.scdn.co/image/ab67616d00001e02203c89bd4391468eea4cc3f5",
+      "url": "https://open.spotify.com/track/5TXDeTFVRVY7Cvt0Dw4vWW",
+      "plays": 1,
+      "last": "2026-11-28T06:59:58.310Z"
+    },
+    "1KMkcUvF7m3SDChDOa7i5L": {
+      "name": "WITHOUT YOU",
+      "artist": "The Kid LAROI",
+      "art": "https://i.scdn.co/image/ab67616d00001e02b4d59e6fa7e5e7cbc57ac33a",
+      "url": "https://open.spotify.com/track/1KMkcUvF7m3SDChDOa7i5L",
+      "plays": 1,
+      "last": "2026-11-28T07:02:40.204Z"
+    },
+    "5TxRUOsGeWeRl3xOML59Ai": {
+      "name": "ARE WE STILL FRIENDS?",
+      "artist": "Tyler, The Creator",
+      "art": "https://i.scdn.co/image/ab67616d00001e0230a635de2bb0caa4e26f6abb",
+      "url": "https://open.spotify.com/track/5TxRUOsGeWeRl3xOML59Ai",
+      "plays": 1,
+      "last": "2026-11-28T07:07:06.106Z"
+    },
+    "6Qyc6fS4DsZjB2mRW9DsQs": {
+      "name": "Iris",
+      "artist": "The Goo Goo Dolls",
+      "art": "https://i.scdn.co/image/ab67616d00001e02eda9478c39a21e1cdc6609ca",
+      "url": "https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs",
+      "plays": 1,
+      "last": "2026-11-28T07:11:56.201Z"
+    },
+    "37BZB0z9T8Xu7U3e65qxFy": {
+      "name": "Save Your Tears (with Ariana Grande) (Remix)",
+      "artist": "The Weeknd, Ariana Grande",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c6af5ffa661a365b77df6ef6",
+      "url": "https://open.spotify.com/track/37BZB0z9T8Xu7U3e65qxFy",
+      "plays": 1,
+      "last": "2026-11-28T07:15:07.701Z"
+    },
+    "12ouAPqXFbm6UOxArLXQtC": {
+      "name": "american wedding (Hotel California)",
+      "artist": "dopuu",
+      "art": "https://i.scdn.co/image/ab67616d00001e02eab34010525ec1aad9b0a6d8",
+      "url": "https://open.spotify.com/track/12ouAPqXFbm6UOxArLXQtC",
+      "plays": 1,
+      "last": "2026-11-28T07:19:41.197Z"
+    },
+    "0pQskrTITgmCMyr85tb9qq": {
+      "name": "Starman - 2012 Remaster",
+      "artist": "David Bowie",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c41f4e1133b0e6c5fcf58680",
+      "url": "https://open.spotify.com/track/0pQskrTITgmCMyr85tb9qq",
+      "plays": 1,
+      "last": "2026-11-28T07:23:55.998Z"
+    },
+    "4kjI1gwQZRKNDkw1nI475M": {
+      "name": "MY EYES",
+      "artist": "Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e0204481c826dd292e5e4983b3f",
+      "url": "https://open.spotify.com/track/4kjI1gwQZRKNDkw1nI475M",
+      "plays": 1,
+      "last": "2026-11-28T07:28:07.696Z"
+    },
+    "0z1o5L7HJx562xZSATcIpY": {
+      "name": "Exit Music (For A Film)",
+      "artist": "Radiohead",
+      "art": "https://i.scdn.co/image/ab67616d00001e02c8b444df094279e70d0ed856",
+      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY",
+      "plays": 1,
+      "last": "2026-11-28T07:32:35.388Z"
+    },
+    "4gh0ZnHzaTMT1sDga7Ek0N": {
+      "name": "sdp interlude",
+      "artist": "Travis Scott",
+      "art": "https://i.scdn.co/image/ab67616d00001e028752a7355996e64709247c53",
+      "url": "https://open.spotify.com/track/4gh0ZnHzaTMT1sDga7Ek0N",
+      "plays": 1,
+      "last": "2026-11-28T07:35:47.485Z"
+    },
+    "3OHfY25tqY28d16oZczHc8": {
+      "name": "Kill Bill",
+      "artist": "SZA",
+      "art": "https://i.scdn.co/image/ab67616d00001e02bc18bdade69ec5ef0bb25b17",
+      "url": "https://open.spotify.com/track/3OHfY25tqY28d16oZczHc8",
+      "plays": 1,
+      "last": "2026-11-28T07:38:21.980Z"
+    },
+    "58k32my5lKofeZRtIvBDg9": {
+      "name": "HONEST",
+      "artist": "Baby Keem",
+      "art": "https://i.scdn.co/image/ab67616d00001e02683757f1fd40a7f7ef64bec1",
+      "url": "https://open.spotify.com/track/58k32my5lKofeZRtIvBDg9",
+      "plays": 1,
+      "last": "2026-11-28T07:41:15.180Z"
+    },
+    "7D0RhFcb3CrfPuTJ0obrod": {
+      "name": "Sparks",
+      "artist": "Coldplay",
+      "art": "https://i.scdn.co/image/ab67616d00001e029164bafe9aaa168d93f4816a",
+      "url": "https://open.spotify.com/track/7D0RhFcb3CrfPuTJ0obrod",
+      "plays": 1,
+      "last": "2026-11-28T07:45:02.679Z"
+    },
+    "0NLm9bQG7ikL5k9x9TtYT7": {
+      "name": "Here With Me",
+      "artist": "d4vd",
+      "art": "https://i.scdn.co/image/ab67616d00001e02e5ff1941799cd30cb2aa072b",
+      "url": "https://open.spotify.com/track/0NLm9bQG7ikL5k9x9TtYT7",
+      "plays": 1,
+      "last": "2026-11-28T07:49:05.674Z"
+    },
+    "76gcXhY3Zv6wW0BTe9nHJo": {
+      "name": "TIL FURTHER NOTICE (feat. James Blake & 21 Savage)",
+      "artist": "Travis Scott, James Blake, 21 Savage",
+      "art": "https://i.scdn.co/image/ab67616d00001e0204481c826dd292e5e4983b3f",
+      "url": "https://open.spotify.com/track/76gcXhY3Zv6wW0BTe9nHJo",
+      "plays": 1,
+      "last": "2026-11-28T07:54:21.076Z"
+    },
+    "7mDTvYD2ieE4Q28XFziMfJ": {
+      "name": "Cry",
+      "artist": "Cigarettes After Sex",
+      "art": "https://i.scdn.co/image/ab67616d00001e028324db1ae37be249aed887e7",
+      "url": "https://open.spotify.com/track/7mDTvYD2ieE4Q28XFziMfJ",
+      "plays": 1,
+      "last": "2026-11-28T08:03:23.271Z"
     }
   }
 }
